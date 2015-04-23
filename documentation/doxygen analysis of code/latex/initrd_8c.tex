@@ -1,0 +1,109 @@
+\hypertarget{initrd_8c}{
+\section{initrd.c File Reference}
+\label{initrd_8c}\index{initrd.c@{initrd.c}}
+}
+{\ttfamily \#include \char`\"{}initrd.h\char`\"{}}\par
+Include dependency graph for initrd.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{initrd_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnode}{fs\_\-node} $\ast$ \hyperlink{initrd_8c_a9666df78f72f566cb55f7adee3070432}{init\_\-initrd} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} location)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structinitrd__header}{initrd\_\-header} $\ast$ \hyperlink{initrd_8c_a38331e3c47b8d2fe263d0a26e636e56f}{header}
+\item 
+\hyperlink{structinitrd__file__header}{initrd\_\-file\_\-header} $\ast$ \hyperlink{initrd_8c_a0dfe59ff327e2e52a8f499cc1c586781}{file\_\-headers}
+\item 
+\hyperlink{structnode}{fs\_\-node} $\ast$ \hyperlink{initrd_8c_ad7b73422b0131752d98d17fc34bcc850}{initrd\_\-root}
+\item 
+\hyperlink{structnode}{fs\_\-node} $\ast$ \hyperlink{initrd_8c_a24042e073b5e4fe0c9064c7edd73c768}{initrd\_\-dev}
+\item 
+\hyperlink{structnode}{fs\_\-node} $\ast$ \hyperlink{initrd_8c_a3a22110da30a9d86a48fc0b2c710b80e}{root\_\-nodes}
+\item 
+int \hyperlink{initrd_8c_a5802b6d8bba6cc4f156a5cf3426872d6}{nroot\_\-nodes}
+\item 
+struct \hyperlink{structdirent}{dirent} \hyperlink{initrd_8c_a85a0945a3cb128517bfcd352d3c43c97}{dirent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{initrd_8c_a9666df78f72f566cb55f7adee3070432}{
+\index{initrd.c@{initrd.c}!init\_\-initrd@{init\_\-initrd}}
+\index{init\_\-initrd@{init\_\-initrd}!initrd.c@{initrd.c}}
+\subsubsection[{init\_\-initrd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fs\_\-node}$\ast$ init\_\-initrd (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ location}
+\end{DoxyParamCaption}
+)}}
+\label{initrd_8c_a9666df78f72f566cb55f7adee3070432}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{initrd_8c_a9666df78f72f566cb55f7adee3070432_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{initrd_8c_a9666df78f72f566cb55f7adee3070432_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{initrd_8c_a85a0945a3cb128517bfcd352d3c43c97}{
+\index{initrd.c@{initrd.c}!dirent@{dirent}}
+\index{dirent@{dirent}!initrd.c@{initrd.c}}
+\subsubsection[{dirent}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dirent} {\bf dirent}}}
+\label{initrd_8c_a85a0945a3cb128517bfcd352d3c43c97}
+\hypertarget{initrd_8c_a0dfe59ff327e2e52a8f499cc1c586781}{
+\index{initrd.c@{initrd.c}!file\_\-headers@{file\_\-headers}}
+\index{file\_\-headers@{file\_\-headers}!initrd.c@{initrd.c}}
+\subsubsection[{file\_\-headers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf initrd\_\-file\_\-header}$\ast$ {\bf file\_\-headers}}}
+\label{initrd_8c_a0dfe59ff327e2e52a8f499cc1c586781}
+\hypertarget{initrd_8c_a38331e3c47b8d2fe263d0a26e636e56f}{
+\index{initrd.c@{initrd.c}!header@{header}}
+\index{header@{header}!initrd.c@{initrd.c}}
+\subsubsection[{header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf initrd\_\-header}$\ast$ {\bf header}}}
+\label{initrd_8c_a38331e3c47b8d2fe263d0a26e636e56f}
+\hypertarget{initrd_8c_a24042e073b5e4fe0c9064c7edd73c768}{
+\index{initrd.c@{initrd.c}!initrd\_\-dev@{initrd\_\-dev}}
+\index{initrd\_\-dev@{initrd\_\-dev}!initrd.c@{initrd.c}}
+\subsubsection[{initrd\_\-dev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fs\_\-node}$\ast$ {\bf initrd\_\-dev}}}
+\label{initrd_8c_a24042e073b5e4fe0c9064c7edd73c768}
+\hypertarget{initrd_8c_ad7b73422b0131752d98d17fc34bcc850}{
+\index{initrd.c@{initrd.c}!initrd\_\-root@{initrd\_\-root}}
+\index{initrd\_\-root@{initrd\_\-root}!initrd.c@{initrd.c}}
+\subsubsection[{initrd\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fs\_\-node}$\ast$ {\bf initrd\_\-root}}}
+\label{initrd_8c_ad7b73422b0131752d98d17fc34bcc850}
+\hypertarget{initrd_8c_a5802b6d8bba6cc4f156a5cf3426872d6}{
+\index{initrd.c@{initrd.c}!nroot\_\-nodes@{nroot\_\-nodes}}
+\index{nroot\_\-nodes@{nroot\_\-nodes}!initrd.c@{initrd.c}}
+\subsubsection[{nroot\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nroot\_\-nodes}}}
+\label{initrd_8c_a5802b6d8bba6cc4f156a5cf3426872d6}
+\hypertarget{initrd_8c_a3a22110da30a9d86a48fc0b2c710b80e}{
+\index{initrd.c@{initrd.c}!root\_\-nodes@{root\_\-nodes}}
+\index{root\_\-nodes@{root\_\-nodes}!initrd.c@{initrd.c}}
+\subsubsection[{root\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fs\_\-node}$\ast$ {\bf root\_\-nodes}}}
+\label{initrd_8c_a3a22110da30a9d86a48fc0b2c710b80e}

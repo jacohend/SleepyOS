@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$main_8c.html#ab5e3162bca0eeb70f5b3da3feba9f6ea" title="cat" alt="" coords="387,181,429,210"/>
+<area shape="rect" id="node7" href="$main_8c.html#aadc3032405d2fec2af8f88528c28f0af" title="typing" alt="" coords="700,38,761,67"/>
+<area shape="rect" id="node13" href="$main_8c.html#aa71a5533dce5e492fce0ae9a27e11aec" title="fn" alt="" coords="204,129,241,158"/>
+<area shape="rect" id="node19" href="$isr_8c.html#a700e3ca056bf69296370f504f2cb6cc8" title="isr_handler" alt="" coords="528,802,619,831"/>
+<area shape="rect" id="node21" href="$kb_8h.html#af112cb1fbdb49ab060a2a4756f15c824" title="keyboard_handler" alt="" coords="155,906,291,935"/>
+<area shape="rect" id="node25" href="$monitor_8h.html#a36a271d53b3d189c49e9bf30c4b17514" title="monitor_write" alt="" coords="168,493,277,522"/>
+<area shape="rect" id="node43" href="$monitor_8c.html#a4f3ba9944acd519e8343bcda21cb69af" title="monitor_write_dec" alt="" coords="339,802,477,831"/>
+<area shape="rect" id="node47" href="$monitor_8c.html#ac24b66a1f1a634b7a032d09b7b9803f7" title="monitor_write_hex" alt="" coords="339,647,477,677"/>
+<area shape="rect" id="node5" href="$main_8c.html#aeec8fb0aa4c6922ab518df077d175f1c" title="interpret" alt="" coords="535,167,612,197"/>
+<area shape="rect" id="node9" href="$main_8c.html#a16c893b53820ad7c0b29142e27b82bd1" title="init_typing" alt="" coords="841,90,927,119"/>
+<area shape="rect" id="node11" href="$main_8c.html#ac49ac80cff1a0caa471dbd92f8d4689b" title="main" alt="" coords="977,417,1031,446"/>
+<area shape="rect" id="node15" href="$thread_8h.html#a9707ba7ac627ac3beacb73cde0120d5d" title="create_thread" alt="" coords="352,23,464,53"/>
+<area shape="rect" id="node23" href="$kb_8h.html#ac3a72156d4bbba013e4d62801992794d" title="init_keyboard" alt="" coords="355,906,461,935"/>
+<area shape="rect" id="node28" href="$main_8c.html#ac3cd799614bf300419b97e48d29dfc54" title="init_buf" alt="" coords="375,77,441,106"/>
+<area shape="rect" id="node32" href="$initrd_8h.html#a9666df78f72f566cb55f7adee3070432" title="init_initrd" alt="" coords="844,442,924,471"/>
+<area shape="rect" id="node37" href="$library_8h.html#aea386e96bb74fcc02c10166ab7118019" title="kassert" alt="" coords="539,725,608,754"/>
+<area shape="rect" id="node39" href="$main_8c.html#aa594fce724d61d0087fb9ca98b9d6ec2" title="list" alt="" coords="388,285,428,314"/>
+<area shape="rect" id="node49" href="$paging_8h.html#a6293af8e675059a566216be86660854b" title="page_fault" alt="" coords="529,546,617,575"/>
+<area shape="rect" id="node54" href="$main_8c.html#abf0858adf3d639bb3aa25701df4fd422" title="run" alt="" coords="552,623,595,653"/>
+<area shape="rect" id="node57" href="$paging_8c.html#aeb12c060bb8a123dc6a89b3fdcecb4cf" title="PANIC" alt="" coords="379,493,437,522"/>
+<area shape="rect" id="node64" href="$main_8c.html#a9185bd123dc0bcab4487b67dc6959a2e" title="write" alt="" coords="383,338,433,367"/>
+<area shape="rect" id="node51" href="$paging_8h.html#a9e357eddcd68888eeaef2b8f86d0cc10" title="initialize_paging" alt="" coords="669,494,792,523"/>
+<area shape="rect" id="node59" href="$paging_8c.html#abec6551c0c913d3f198e9482052ff591" title="alloc_frame" alt="" coords="525,493,621,522"/>
+</map>

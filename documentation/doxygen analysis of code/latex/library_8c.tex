@@ -1,0 +1,272 @@
+\hypertarget{library_8c}{
+\section{library.c File Reference}
+\label{library_8c}\index{library.c@{library.c}}
+}
+{\ttfamily \#include \char`\"{}library.h\char`\"{}}\par
+Include dependency graph for library.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{library_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{library_8c_a26737c398b5d6f6f5052d174fb3ca0c0}{outb} (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} port, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} value)
+\item 
+\hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} \hyperlink{library_8c_a3d758e66f0e4acaf38ba39b58ce83e4d}{inb} (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} port)
+\item 
+\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} \hyperlink{library_8c_a3dcbb9e13203beb0e38956999e8ae61d}{inw} (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} port)
+\item 
+void \hyperlink{library_8c_a569285a8e1fa88268d77295629066245}{memcpy} (\hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} $\ast$dest, const \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} $\ast$src, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} len)
+\item 
+void \hyperlink{library_8c_adfcaf609e8c4624d62c20198d20d4156}{memset} (\hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} $\ast$dest, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} val, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} len)
+\item 
+int \hyperlink{library_8c_a57b18ef9eecf3a059b3138b3806868bb}{strcmp} (char $\ast$str1, char $\ast$str2)
+\item 
+int \hyperlink{library_8c_ab745ed93c0024648f33dc1d553e9fdcc}{strncmp} (const char $\ast$s1, const char $\ast$s2, int n)
+\item 
+void $\ast$ \hyperlink{library_8c_aded78671762944aa6946155fa2775a14}{strtail} (char $\ast$str, char $\ast$dest)
+\item 
+char $\ast$ \hyperlink{library_8c_a7a82515b5d377be04817715c5465b647}{strcpy} (char $\ast$dest, const char $\ast$src)
+\item 
+char $\ast$ \hyperlink{library_8c_adb8723e585ed29f2370cddf90f6891bc}{strcat} (char $\ast$dest, const char $\ast$src)
+\item 
+int \hyperlink{library_8c_a69703d8b9e3db59b7eaee01eabbd3007}{strlen} (char $\ast$src)
+\item 
+void \hyperlink{library_8c_aea386e96bb74fcc02c10166ab7118019}{kassert} (const char $\ast$file, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} line, const char $\ast$desc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{library_8c_a3d758e66f0e4acaf38ba39b58ce83e4d}{
+\index{library.c@{library.c}!inb@{inb}}
+\index{inb@{inb}!library.c@{library.c}}
+\subsubsection[{inb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8int} inb (
+\begin{DoxyParamCaption}
+\item[{{\bf u16int}}]{ port}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a3d758e66f0e4acaf38ba39b58ce83e4d}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_a3d758e66f0e4acaf38ba39b58ce83e4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_a3dcbb9e13203beb0e38956999e8ae61d}{
+\index{library.c@{library.c}!inw@{inw}}
+\index{inw@{inw}!library.c@{library.c}}
+\subsubsection[{inw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16int} inw (
+\begin{DoxyParamCaption}
+\item[{{\bf u16int}}]{ port}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a3dcbb9e13203beb0e38956999e8ae61d}
+\hypertarget{library_8c_aea386e96bb74fcc02c10166ab7118019}{
+\index{library.c@{library.c}!kassert@{kassert}}
+\index{kassert@{kassert}!library.c@{library.c}}
+\subsubsection[{kassert}]{\setlength{\rightskip}{0pt plus 5cm}void kassert (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ file, }
+\item[{{\bf u32int}}]{ line, }
+\item[{const char $\ast$}]{ desc}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_aea386e96bb74fcc02c10166ab7118019}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_aea386e96bb74fcc02c10166ab7118019_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_a569285a8e1fa88268d77295629066245}{
+\index{library.c@{library.c}!memcpy@{memcpy}}
+\index{memcpy@{memcpy}!library.c@{library.c}}
+\subsubsection[{memcpy}]{\setlength{\rightskip}{0pt plus 5cm}void memcpy (
+\begin{DoxyParamCaption}
+\item[{{\bf u8int} $\ast$}]{ dest, }
+\item[{const {\bf u8int} $\ast$}]{ src, }
+\item[{{\bf u32int}}]{ len}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a569285a8e1fa88268d77295629066245}
+\hypertarget{library_8c_adfcaf609e8c4624d62c20198d20d4156}{
+\index{library.c@{library.c}!memset@{memset}}
+\index{memset@{memset}!library.c@{library.c}}
+\subsubsection[{memset}]{\setlength{\rightskip}{0pt plus 5cm}void memset (
+\begin{DoxyParamCaption}
+\item[{{\bf u8int} $\ast$}]{ dest, }
+\item[{{\bf u8int}}]{ val, }
+\item[{{\bf u32int}}]{ len}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_adfcaf609e8c4624d62c20198d20d4156}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_adfcaf609e8c4624d62c20198d20d4156_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_a26737c398b5d6f6f5052d174fb3ca0c0}{
+\index{library.c@{library.c}!outb@{outb}}
+\index{outb@{outb}!library.c@{library.c}}
+\subsubsection[{outb}]{\setlength{\rightskip}{0pt plus 5cm}void outb (
+\begin{DoxyParamCaption}
+\item[{{\bf u16int}}]{ port, }
+\item[{{\bf u8int}}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a26737c398b5d6f6f5052d174fb3ca0c0}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_a26737c398b5d6f6f5052d174fb3ca0c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_adb8723e585ed29f2370cddf90f6891bc}{
+\index{library.c@{library.c}!strcat@{strcat}}
+\index{strcat@{strcat}!library.c@{library.c}}
+\subsubsection[{strcat}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ strcat (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ dest, }
+\item[{const char $\ast$}]{ src}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_adb8723e585ed29f2370cddf90f6891bc}
+\hypertarget{library_8c_a57b18ef9eecf3a059b3138b3806868bb}{
+\index{library.c@{library.c}!strcmp@{strcmp}}
+\index{strcmp@{strcmp}!library.c@{library.c}}
+\subsubsection[{strcmp}]{\setlength{\rightskip}{0pt plus 5cm}int strcmp (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str1, }
+\item[{char $\ast$}]{ str2}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a57b18ef9eecf3a059b3138b3806868bb}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_a57b18ef9eecf3a059b3138b3806868bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_a7a82515b5d377be04817715c5465b647}{
+\index{library.c@{library.c}!strcpy@{strcpy}}
+\index{strcpy@{strcpy}!library.c@{library.c}}
+\subsubsection[{strcpy}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ strcpy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ dest, }
+\item[{const char $\ast$}]{ src}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a7a82515b5d377be04817715c5465b647}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{library_8c_a7a82515b5d377be04817715c5465b647_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_a69703d8b9e3db59b7eaee01eabbd3007}{
+\index{library.c@{library.c}!strlen@{strlen}}
+\index{strlen@{strlen}!library.c@{library.c}}
+\subsubsection[{strlen}]{\setlength{\rightskip}{0pt plus 5cm}int strlen (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ src}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_a69703d8b9e3db59b7eaee01eabbd3007}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_a69703d8b9e3db59b7eaee01eabbd3007_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_ab745ed93c0024648f33dc1d553e9fdcc}{
+\index{library.c@{library.c}!strncmp@{strncmp}}
+\index{strncmp@{strncmp}!library.c@{library.c}}
+\subsubsection[{strncmp}]{\setlength{\rightskip}{0pt plus 5cm}int strncmp (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ s1, }
+\item[{const char $\ast$}]{ s2, }
+\item[{int}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_ab745ed93c0024648f33dc1d553e9fdcc}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_ab745ed93c0024648f33dc1d553e9fdcc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8c_aded78671762944aa6946155fa2775a14}{
+\index{library.c@{library.c}!strtail@{strtail}}
+\index{strtail@{strtail}!library.c@{library.c}}
+\subsubsection[{strtail}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ strtail (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str, }
+\item[{char $\ast$}]{ dest}
+\end{DoxyParamCaption}
+)}}
+\label{library_8c_aded78671762944aa6946155fa2775a14}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8c_aded78671762944aa6946155fa2775a14_icgraph}
+\end{center}
+\end{figure}
+
+

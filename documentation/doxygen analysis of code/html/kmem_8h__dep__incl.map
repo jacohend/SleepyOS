@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$initrd_8h.html" title="initrd.h" alt="" coords="5,83,72,112"/>
+<area shape="rect" id="node9" href="$kmem_8c.html" title="kmem.c" alt="" coords="96,83,171,112"/>
+<area shape="rect" id="node11" href="$task__scheduler_8h.html" title="task_scheduler.h" alt="" coords="195,83,323,112"/>
+<area shape="rect" id="node16" href="$paging_8c.html" title="paging.c" alt="" coords="347,83,421,112"/>
+<area shape="rect" id="node5" href="$initrd_8c.html" title="initrd.c" alt="" coords="7,160,71,189"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="main.c" alt="" coords="100,160,164,189"/>
+<area shape="rect" id="node14" href="$task__scheduler_8c.html" title="task_scheduler.c" alt="" coords="195,160,323,189"/>
+</map>

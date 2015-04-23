@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$monitor_8c.html#a36a271d53b3d189c49e9bf30c4b17514" title="monitor_write" alt="" coords="331,25,440,54"/>
+<area shape="rect" id="node7" href="$monitor_8c.html#ac24b66a1f1a634b7a032d09b7b9803f7" title="monitor_write_hex" alt="" coords="144,77,283,106"/>
+<area shape="rect" id="node11" href="$paging_8c.html#aeb12c060bb8a123dc6a89b3fdcecb4cf" title="PANIC" alt="" coords="184,24,243,53"/>
+<area shape="rect" id="node5" href="$monitor_8c.html#a9f9e8bf5768ca790a071e57c3ed0b869" title="monitor_put" alt="" coords="489,52,588,81"/>
+</map>

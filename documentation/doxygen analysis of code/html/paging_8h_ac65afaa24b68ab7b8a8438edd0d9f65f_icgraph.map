@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$paging_8h.html#a9e357eddcd68888eeaef2b8f86d0cc10" title="initialize_paging" alt="" coords="464,35,587,64"/>
+<area shape="rect" id="node7" href="$kmem_8h.html#ae657b8bdbc9148be8fe996a05cc867fc" title="kmalloc" alt="" coords="137,166,207,195"/>
+<area shape="rect" id="node5" href="$main_8c.html#ac49ac80cff1a0caa471dbd92f8d4689b" title="main" alt="" coords="900,166,953,195"/>
+<area shape="rect" id="node9" href="$task__scheduler_8h.html#a1d4c34efcd96ffbcf843eedef06a5461" title="add_thread" alt="" coords="289,114,383,143"/>
+<area shape="rect" id="node11" href="$main_8c.html#aeec8fb0aa4c6922ab518df077d175f1c" title="interpret" alt="" coords="487,166,564,195"/>
+<area shape="rect" id="node18" href="$kmem_8h.html#ac02ebd06b04359186655dde563d5e72a" title="create_heap" alt="" coords="285,60,387,90"/>
+<area shape="rect" id="node21" href="$ordered__array_8h.html#acb4414c2ae0d5f6f02f5b8c03c69b32b" title="create_ordered_array" alt="" coords="256,218,416,247"/>
+<area shape="rect" id="node23" href="$thread_8h.html#a9707ba7ac627ac3beacb73cde0120d5d" title="create_thread" alt="" coords="280,271,392,300"/>
+<area shape="rect" id="node27" href="$initrd_8h.html#a9666df78f72f566cb55f7adee3070432" title="init_initrd" alt="" coords="635,271,715,300"/>
+<area shape="rect" id="node30" href="$thread_8h.html#aa2a39fca5681a4beacaa4281920583d2" title="init_threading" alt="" coords="281,375,391,404"/>
+<area shape="rect" id="node13" href="$main_8c.html#aadc3032405d2fec2af8f88528c28f0af" title="typing" alt="" coords="644,166,705,195"/>
+<area shape="rect" id="node15" href="$main_8c.html#a16c893b53820ad7c0b29142e27b82bd1" title="init_typing" alt="" coords="764,166,849,195"/>
+</map>

@@ -1,0 +1,115 @@
+\hypertarget{thread_8h}{
+\section{thread.h File Reference}
+\label{thread_8h}\index{thread.h@{thread.h}}
+}
+{\ttfamily \#include \char`\"{}library.h\char`\"{}}\par
+Include dependency graph for thread.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{thread_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{thread_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structthread__table}{thread\_\-table}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structthread__table}{thread\_\-table} $\ast$ \hyperlink{thread_8h_aa2a39fca5681a4beacaa4281920583d2}{init\_\-threading} ()
+\item 
+\hyperlink{structthread__table}{thread\_\-table} $\ast$ \hyperlink{thread_8h_a9707ba7ac627ac3beacb73cde0120d5d}{create\_\-thread} (int($\ast$fn)(void $\ast$), void $\ast$arg, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} $\ast$\hyperlink{task__scheduler_8c_a61fba26c3b3eb89fbf4585287349ec2a}{stack})
+\item 
+void \hyperlink{thread_8h_a5e959cc9af3cc0159843f193c5250c5c}{switch\_\-thread} (\hyperlink{structthread__table}{thread\_\-table} $\ast$next)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{thread_8h_a9707ba7ac627ac3beacb73cde0120d5d}{
+\index{thread.h@{thread.h}!create\_\-thread@{create\_\-thread}}
+\index{create\_\-thread@{create\_\-thread}!thread.h@{thread.h}}
+\subsubsection[{create\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-table}$\ast$ create\_\-thread (
+\begin{DoxyParamCaption}
+\item[{int($\ast$)(void $\ast$)}]{ fn, }
+\item[{void $\ast$}]{ arg, }
+\item[{{\bf u32int} $\ast$}]{ stack}
+\end{DoxyParamCaption}
+)}}
+\label{thread_8h_a9707ba7ac627ac3beacb73cde0120d5d}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8h_a9707ba7ac627ac3beacb73cde0120d5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8h_a9707ba7ac627ac3beacb73cde0120d5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{thread_8h_aa2a39fca5681a4beacaa4281920583d2}{
+\index{thread.h@{thread.h}!init\_\-threading@{init\_\-threading}}
+\index{init\_\-threading@{init\_\-threading}!thread.h@{thread.h}}
+\subsubsection[{init\_\-threading}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-table}$\ast$ init\_\-threading (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{thread_8h_aa2a39fca5681a4beacaa4281920583d2}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8h_aa2a39fca5681a4beacaa4281920583d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{thread_8h_a5e959cc9af3cc0159843f193c5250c5c}{
+\index{thread.h@{thread.h}!switch\_\-thread@{switch\_\-thread}}
+\index{switch\_\-thread@{switch\_\-thread}!thread.h@{thread.h}}
+\subsubsection[{switch\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void switch\_\-thread (
+\begin{DoxyParamCaption}
+\item[{{\bf thread\_\-table} $\ast$}]{ next}
+\end{DoxyParamCaption}
+)}}
+\label{thread_8h_a5e959cc9af3cc0159843f193c5250c5c}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8h_a5e959cc9af3cc0159843f193c5250c5c_icgraph}
+\end{center}
+\end{figure}
+
+

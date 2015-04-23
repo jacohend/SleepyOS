@@ -1,0 +1,28 @@
+Jacob Henderson
+
+SOURCES AND ACKNOWLEDGMENTS: 
+
+ACKNOWLEDGMENTS
+
+I followed several tutorials to complete this assignment.
+
+I would not have been able to make this work if I had programmed all of the C library and memory functions from scratch, although the memory and interrupt code includes far more original "puzzling it out" on my part.
+
+Basic C libraries for X86 hobby kernel development are all virtually identical. 
+I visited OSdev, James Molloy's kernel development site, Bran's kernel tutorial, and Wikipedia, and found similar code for the boot asm, GDT/IDT, and C libraries. 
+Because these are the only comprehensive sources I have, and because basic x86 boot asm and interrupt enabling, state saving, etc is all identical, my code will inevitably look similar if not the same, so I wish to attribute the relevant library code to their respective sources (although I do not use the term "authors" since most of this does not represent original material on the sources' part) to avoid accusations of plagiarism.  
+
+I wrote the monitor code in summer 2008 using osdev tutorials as sources
+
+I learned
+boot asm from Molloy
+linker from OSdev
+GDT from Bran's tutorial
+IDT, irqs, paging, vfs from Molloy, osdev
+basic elf loading, task switching from skelix, Molloy
+
+I modified or reimplemented many of these for my own purposes.
+
+
+
+

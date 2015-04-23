@@ -1,0 +1,119 @@
+\hypertarget{descriptor__tables_8c}{
+\section{descriptor\_\-tables.c File Reference}
+\label{descriptor__tables_8c}\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}}
+}
+{\ttfamily \#include \char`\"{}library.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}descriptor\_\-tables.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}isr.h\char`\"{}}\par
+Include dependency graph for descriptor\_\-tables.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{descriptor__tables_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{descriptor__tables_8c_af3833dc9063c90b6758a50b1101f54b1}{gdt\_\-flush} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int})
+\item 
+void \hyperlink{descriptor__tables_8c_a7f063f0c0d27643faa13723e8086b808}{idt\_\-flush} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int})
+\item 
+void \hyperlink{descriptor__tables_8c_a29b68b6342c3a52a54ad89ec23945472}{init\_\-descriptor\_\-tables} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgdt__entry}{gdt\_\-table} \hyperlink{descriptor__tables_8c_a00efdd13934ce42461d7e4417b2eda92}{gdt} \mbox{[}5\mbox{]}
+\item 
+\hyperlink{structgdt__ptr}{gdt\_\-pointer} \hyperlink{descriptor__tables_8c_a26e247caad4c6048482c5327b6d9ec47}{gp}
+\item 
+\hyperlink{structidt__entry__struct}{idt\_\-entry\_\-t} \hyperlink{descriptor__tables_8c_a02c62ffc54da283f5faaa40b125d2dce}{idt\_\-entries} \mbox{[}256\mbox{]}
+\item 
+\hyperlink{structidt__ptr__struct}{idt\_\-ptr\_\-t} \hyperlink{descriptor__tables_8c_a3f2660783240a0a506d85e3750dff814}{idt\_\-ptr}
+\item 
+\hyperlink{isr_8h_acf628c2f58c1c719fd6f9c879ab5ddf4}{isr\_\-t} \hyperlink{descriptor__tables_8c_a3bec2371c4d67ab6e9e76cd48cd2d9fb}{interrupt\_\-handlers} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{descriptor__tables_8c_af3833dc9063c90b6758a50b1101f54b1}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!gdt\_\-flush@{gdt\_\-flush}}
+\index{gdt\_\-flush@{gdt\_\-flush}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{gdt\_\-flush}]{\setlength{\rightskip}{0pt plus 5cm}void gdt\_\-flush (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{}
+\end{DoxyParamCaption}
+)}}
+\label{descriptor__tables_8c_af3833dc9063c90b6758a50b1101f54b1}
+\hypertarget{descriptor__tables_8c_a7f063f0c0d27643faa13723e8086b808}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!idt\_\-flush@{idt\_\-flush}}
+\index{idt\_\-flush@{idt\_\-flush}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{idt\_\-flush}]{\setlength{\rightskip}{0pt plus 5cm}void idt\_\-flush (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{}
+\end{DoxyParamCaption}
+)}}
+\label{descriptor__tables_8c_a7f063f0c0d27643faa13723e8086b808}
+\hypertarget{descriptor__tables_8c_a29b68b6342c3a52a54ad89ec23945472}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!init\_\-descriptor\_\-tables@{init\_\-descriptor\_\-tables}}
+\index{init\_\-descriptor\_\-tables@{init\_\-descriptor\_\-tables}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{init\_\-descriptor\_\-tables}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-descriptor\_\-tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{descriptor__tables_8c_a29b68b6342c3a52a54ad89ec23945472}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{descriptor__tables_8c_a29b68b6342c3a52a54ad89ec23945472_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{descriptor__tables_8c_a29b68b6342c3a52a54ad89ec23945472_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{descriptor__tables_8c_a00efdd13934ce42461d7e4417b2eda92}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!gdt@{gdt}}
+\index{gdt@{gdt}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{gdt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gdt\_\-table} {\bf gdt}\mbox{[}5\mbox{]}}}
+\label{descriptor__tables_8c_a00efdd13934ce42461d7e4417b2eda92}
+\hypertarget{descriptor__tables_8c_a26e247caad4c6048482c5327b6d9ec47}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!gp@{gp}}
+\index{gp@{gp}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{gp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gdt\_\-pointer} {\bf gp}}}
+\label{descriptor__tables_8c_a26e247caad4c6048482c5327b6d9ec47}
+\hypertarget{descriptor__tables_8c_a02c62ffc54da283f5faaa40b125d2dce}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!idt\_\-entries@{idt\_\-entries}}
+\index{idt\_\-entries@{idt\_\-entries}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{idt\_\-entries}]{\setlength{\rightskip}{0pt plus 5cm}{\bf idt\_\-entry\_\-t} {\bf idt\_\-entries}\mbox{[}256\mbox{]}}}
+\label{descriptor__tables_8c_a02c62ffc54da283f5faaa40b125d2dce}
+\hypertarget{descriptor__tables_8c_a3f2660783240a0a506d85e3750dff814}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!idt\_\-ptr@{idt\_\-ptr}}
+\index{idt\_\-ptr@{idt\_\-ptr}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{idt\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf idt\_\-ptr\_\-t} {\bf idt\_\-ptr}}}
+\label{descriptor__tables_8c_a3f2660783240a0a506d85e3750dff814}
+\hypertarget{descriptor__tables_8c_a3bec2371c4d67ab6e9e76cd48cd2d9fb}{
+\index{descriptor\_\-tables.c@{descriptor\_\-tables.c}!interrupt\_\-handlers@{interrupt\_\-handlers}}
+\index{interrupt\_\-handlers@{interrupt\_\-handlers}!descriptor_tables.c@{descriptor\_\-tables.c}}
+\subsubsection[{interrupt\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf isr\_\-t} {\bf interrupt\_\-handlers}\mbox{[}$\,$\mbox{]}}}
+\label{descriptor__tables_8c_a3bec2371c4d67ab6e9e76cd48cd2d9fb}

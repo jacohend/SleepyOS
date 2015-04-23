@@ -1,0 +1,197 @@
+\hypertarget{monitor_8c}{
+\section{monitor.c File Reference}
+\label{monitor_8c}\index{monitor.c@{monitor.c}}
+}
+{\ttfamily \#include \char`\"{}monitor.h\char`\"{}}\par
+Include dependency graph for monitor.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{monitor_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{monitor_8c_a9f9e8bf5768ca790a071e57c3ed0b869}{monitor\_\-put} (char c)
+\item 
+void \hyperlink{monitor_8c_a48ee57bfccfb844ff9f6b0efe8169490}{monitor\_\-clear} ()
+\item 
+void \hyperlink{monitor_8c_a36a271d53b3d189c49e9bf30c4b17514}{monitor\_\-write} (char $\ast$c)
+\item 
+void \hyperlink{monitor_8c_ac24b66a1f1a634b7a032d09b7b9803f7}{monitor\_\-write\_\-hex} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} n)
+\item 
+void \hyperlink{monitor_8c_a4f3ba9944acd519e8343bcda21cb69af}{monitor\_\-write\_\-dec} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} n)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} $\ast$ \hyperlink{monitor_8c_a91ea3428e6eff9840a5de2830576eb74}{video\_\-memory} = (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} $\ast$)0xB8000
+\item 
+\hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} \hyperlink{monitor_8c_a22c7ad095416bf2408a2056184036430}{cursor\_\-x} = 0
+\item 
+\hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} \hyperlink{monitor_8c_a66c1c6a6fc961ed55fe1046821d52a9e}{cursor\_\-y} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{monitor_8c_a48ee57bfccfb844ff9f6b0efe8169490}{
+\index{monitor.c@{monitor.c}!monitor\_\-clear@{monitor\_\-clear}}
+\index{monitor\_\-clear@{monitor\_\-clear}!monitor.c@{monitor.c}}
+\subsubsection[{monitor\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}void monitor\_\-clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{monitor_8c_a48ee57bfccfb844ff9f6b0efe8169490}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{monitor_8c_a48ee57bfccfb844ff9f6b0efe8169490_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{monitor_8c_a9f9e8bf5768ca790a071e57c3ed0b869}{
+\index{monitor.c@{monitor.c}!monitor\_\-put@{monitor\_\-put}}
+\index{monitor\_\-put@{monitor\_\-put}!monitor.c@{monitor.c}}
+\subsubsection[{monitor\_\-put}]{\setlength{\rightskip}{0pt plus 5cm}void monitor\_\-put (
+\begin{DoxyParamCaption}
+\item[{char}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{monitor_8c_a9f9e8bf5768ca790a071e57c3ed0b869}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{monitor_8c_a9f9e8bf5768ca790a071e57c3ed0b869_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{monitor_8c_a36a271d53b3d189c49e9bf30c4b17514}{
+\index{monitor.c@{monitor.c}!monitor\_\-write@{monitor\_\-write}}
+\index{monitor\_\-write@{monitor\_\-write}!monitor.c@{monitor.c}}
+\subsubsection[{monitor\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}void monitor\_\-write (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{monitor_8c_a36a271d53b3d189c49e9bf30c4b17514}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{monitor_8c_a36a271d53b3d189c49e9bf30c4b17514_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{monitor_8c_a36a271d53b3d189c49e9bf30c4b17514_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{monitor_8c_a4f3ba9944acd519e8343bcda21cb69af}{
+\index{monitor.c@{monitor.c}!monitor\_\-write\_\-dec@{monitor\_\-write\_\-dec}}
+\index{monitor\_\-write\_\-dec@{monitor\_\-write\_\-dec}!monitor.c@{monitor.c}}
+\subsubsection[{monitor\_\-write\_\-dec}]{\setlength{\rightskip}{0pt plus 5cm}void monitor\_\-write\_\-dec (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{monitor_8c_a4f3ba9944acd519e8343bcda21cb69af}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{monitor_8c_a4f3ba9944acd519e8343bcda21cb69af_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{monitor_8c_a4f3ba9944acd519e8343bcda21cb69af_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{monitor_8c_ac24b66a1f1a634b7a032d09b7b9803f7}{
+\index{monitor.c@{monitor.c}!monitor\_\-write\_\-hex@{monitor\_\-write\_\-hex}}
+\index{monitor\_\-write\_\-hex@{monitor\_\-write\_\-hex}!monitor.c@{monitor.c}}
+\subsubsection[{monitor\_\-write\_\-hex}]{\setlength{\rightskip}{0pt plus 5cm}void monitor\_\-write\_\-hex (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{monitor_8c_ac24b66a1f1a634b7a032d09b7b9803f7}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{monitor_8c_ac24b66a1f1a634b7a032d09b7b9803f7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{monitor_8c_ac24b66a1f1a634b7a032d09b7b9803f7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{monitor_8c_a22c7ad095416bf2408a2056184036430}{
+\index{monitor.c@{monitor.c}!cursor\_\-x@{cursor\_\-x}}
+\index{cursor\_\-x@{cursor\_\-x}!monitor.c@{monitor.c}}
+\subsubsection[{cursor\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8int} {\bf cursor\_\-x} = 0}}
+\label{monitor_8c_a22c7ad095416bf2408a2056184036430}
+\hypertarget{monitor_8c_a66c1c6a6fc961ed55fe1046821d52a9e}{
+\index{monitor.c@{monitor.c}!cursor\_\-y@{cursor\_\-y}}
+\index{cursor\_\-y@{cursor\_\-y}!monitor.c@{monitor.c}}
+\subsubsection[{cursor\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8int} {\bf cursor\_\-y} = 0}}
+\label{monitor_8c_a66c1c6a6fc961ed55fe1046821d52a9e}
+\hypertarget{monitor_8c_a91ea3428e6eff9840a5de2830576eb74}{
+\index{monitor.c@{monitor.c}!video\_\-memory@{video\_\-memory}}
+\index{video\_\-memory@{video\_\-memory}!monitor.c@{monitor.c}}
+\subsubsection[{video\_\-memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16int}$\ast$ {\bf video\_\-memory} = ({\bf u16int} $\ast$)0xB8000}}
+\label{monitor_8c_a91ea3428e6eff9840a5de2830576eb74}

@@ -1,0 +1,262 @@
+\hypertarget{kmem_8h}{
+\section{kmem.h File Reference}
+\label{kmem_8h}\index{kmem.h@{kmem.h}}
+}
+{\ttfamily \#include \char`\"{}library.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ordered\_\-array.h\char`\"{}}\par
+Include dependency graph for kmem.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{kmem_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=392pt]{kmem_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structheader__t}{header\_\-t}
+\item 
+struct \hyperlink{structfooter__t}{footer\_\-t}
+\item 
+struct \hyperlink{structheap__t}{heap\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{kmem_8h_a56a5170fccf0d04bf9851626f3173ab0}{KHEAP\_\-START}~0xC0000000
+\item 
+\#define \hyperlink{kmem_8h_a5ee9206c33d7499f6a85ee7ed3c27272}{KHEAP\_\-INITIAL\_\-SIZE}~0x100000
+\item 
+\#define \hyperlink{kmem_8h_af1a449a1cd9f28cdda2327efd3517d95}{HEAP\_\-INDEX\_\-SIZE}~0x20000
+\item 
+\#define \hyperlink{kmem_8h_a604474f5c0892ea2c6c16b5e45c59f59}{HEAP\_\-MAGIC}~0x123890AB
+\item 
+\#define \hyperlink{kmem_8h_a6000da6aee6de14d187fec34f0648279}{HEAP\_\-MIN\_\-SIZE}~0x70000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structheap__t}{heap\_\-t} $\ast$ \hyperlink{kmem_8h_ac02ebd06b04359186655dde563d5e72a}{create\_\-heap} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} start, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{kmem_8c_a6342e29537636642d9a1477deabf683f}{end}, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} max, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} supervisor, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} readonly)
+\item 
+void $\ast$ \hyperlink{kmem_8h_add3c06b419bd2487b79def1ca4784079}{alloc} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{multiboot_8h_a8c5ccb4d457cb24df33a7c9facfa2650}{size}, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} page\_\-align, \hyperlink{structheap__t}{heap\_\-t} $\ast$heap)
+\item 
+void \hyperlink{kmem_8h_a266d3a15c9fa224ed24a31f38d50a8b8}{free} (void $\ast$p, \hyperlink{structheap__t}{heap\_\-t} $\ast$heap)
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{kmem_8h_ae657b8bdbc9148be8fe996a05cc867fc}{kmalloc} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{multiboot_8h_a8c5ccb4d457cb24df33a7c9facfa2650}{size}, int page\_\-align, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} $\ast$phys)
+\item 
+void \hyperlink{kmem_8h_af7105034bf054e37218d6ade20db4684}{kfree} (void $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{kmem_8h_af1a449a1cd9f28cdda2327efd3517d95}{
+\index{kmem.h@{kmem.h}!HEAP\_\-INDEX\_\-SIZE@{HEAP\_\-INDEX\_\-SIZE}}
+\index{HEAP\_\-INDEX\_\-SIZE@{HEAP\_\-INDEX\_\-SIZE}!kmem.h@{kmem.h}}
+\subsubsection[{HEAP\_\-INDEX\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define HEAP\_\-INDEX\_\-SIZE~0x20000}}
+\label{kmem_8h_af1a449a1cd9f28cdda2327efd3517d95}
+\hypertarget{kmem_8h_a604474f5c0892ea2c6c16b5e45c59f59}{
+\index{kmem.h@{kmem.h}!HEAP\_\-MAGIC@{HEAP\_\-MAGIC}}
+\index{HEAP\_\-MAGIC@{HEAP\_\-MAGIC}!kmem.h@{kmem.h}}
+\subsubsection[{HEAP\_\-MAGIC}]{\setlength{\rightskip}{0pt plus 5cm}\#define HEAP\_\-MAGIC~0x123890AB}}
+\label{kmem_8h_a604474f5c0892ea2c6c16b5e45c59f59}
+\hypertarget{kmem_8h_a6000da6aee6de14d187fec34f0648279}{
+\index{kmem.h@{kmem.h}!HEAP\_\-MIN\_\-SIZE@{HEAP\_\-MIN\_\-SIZE}}
+\index{HEAP\_\-MIN\_\-SIZE@{HEAP\_\-MIN\_\-SIZE}!kmem.h@{kmem.h}}
+\subsubsection[{HEAP\_\-MIN\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define HEAP\_\-MIN\_\-SIZE~0x70000}}
+\label{kmem_8h_a6000da6aee6de14d187fec34f0648279}
+\hypertarget{kmem_8h_a5ee9206c33d7499f6a85ee7ed3c27272}{
+\index{kmem.h@{kmem.h}!KHEAP\_\-INITIAL\_\-SIZE@{KHEAP\_\-INITIAL\_\-SIZE}}
+\index{KHEAP\_\-INITIAL\_\-SIZE@{KHEAP\_\-INITIAL\_\-SIZE}!kmem.h@{kmem.h}}
+\subsubsection[{KHEAP\_\-INITIAL\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define KHEAP\_\-INITIAL\_\-SIZE~0x100000}}
+\label{kmem_8h_a5ee9206c33d7499f6a85ee7ed3c27272}
+\hypertarget{kmem_8h_a56a5170fccf0d04bf9851626f3173ab0}{
+\index{kmem.h@{kmem.h}!KHEAP\_\-START@{KHEAP\_\-START}}
+\index{KHEAP\_\-START@{KHEAP\_\-START}!kmem.h@{kmem.h}}
+\subsubsection[{KHEAP\_\-START}]{\setlength{\rightskip}{0pt plus 5cm}\#define KHEAP\_\-START~0xC0000000}}
+\label{kmem_8h_a56a5170fccf0d04bf9851626f3173ab0}
+
+
+\subsection{Function Documentation}
+\hypertarget{kmem_8h_add3c06b419bd2487b79def1ca4784079}{
+\index{kmem.h@{kmem.h}!alloc@{alloc}}
+\index{alloc@{alloc}!kmem.h@{kmem.h}}
+\subsubsection[{alloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ alloc (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ size, }
+\item[{{\bf u8int}}]{ page\_\-align, }
+\item[{{\bf heap\_\-t} $\ast$}]{ heap}
+\end{DoxyParamCaption}
+)}}
+\label{kmem_8h_add3c06b419bd2487b79def1ca4784079}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=354pt]{kmem_8h_add3c06b419bd2487b79def1ca4784079_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{kmem_8h_add3c06b419bd2487b79def1ca4784079_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{kmem_8h_ac02ebd06b04359186655dde563d5e72a}{
+\index{kmem.h@{kmem.h}!create\_\-heap@{create\_\-heap}}
+\index{create\_\-heap@{create\_\-heap}!kmem.h@{kmem.h}}
+\subsubsection[{create\_\-heap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf heap\_\-t}$\ast$ create\_\-heap (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ start, }
+\item[{{\bf u32int}}]{ end, }
+\item[{{\bf u32int}}]{ max, }
+\item[{{\bf u8int}}]{ supervisor, }
+\item[{{\bf u8int}}]{ readonly}
+\end{DoxyParamCaption}
+)}}
+\label{kmem_8h_ac02ebd06b04359186655dde563d5e72a}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{kmem_8h_ac02ebd06b04359186655dde563d5e72a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{kmem_8h_ac02ebd06b04359186655dde563d5e72a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{kmem_8h_a266d3a15c9fa224ed24a31f38d50a8b8}{
+\index{kmem.h@{kmem.h}!free@{free}}
+\index{free@{free}!kmem.h@{kmem.h}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}void free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ p, }
+\item[{{\bf heap\_\-t} $\ast$}]{ heap}
+\end{DoxyParamCaption}
+)}}
+\label{kmem_8h_a266d3a15c9fa224ed24a31f38d50a8b8}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{kmem_8h_a266d3a15c9fa224ed24a31f38d50a8b8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{kmem_8h_a266d3a15c9fa224ed24a31f38d50a8b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{kmem_8h_af7105034bf054e37218d6ade20db4684}{
+\index{kmem.h@{kmem.h}!kfree@{kfree}}
+\index{kfree@{kfree}!kmem.h@{kmem.h}}
+\subsubsection[{kfree}]{\setlength{\rightskip}{0pt plus 5cm}void kfree (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ p}
+\end{DoxyParamCaption}
+)}}
+\label{kmem_8h_af7105034bf054e37218d6ade20db4684}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=356pt]{kmem_8h_af7105034bf054e37218d6ade20db4684_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{kmem_8h_af7105034bf054e37218d6ade20db4684_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{kmem_8h_ae657b8bdbc9148be8fe996a05cc867fc}{
+\index{kmem.h@{kmem.h}!kmalloc@{kmalloc}}
+\index{kmalloc@{kmalloc}!kmem.h@{kmem.h}}
+\subsubsection[{kmalloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} kmalloc (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ size, }
+\item[{int}]{ page\_\-align, }
+\item[{{\bf u32int} $\ast$}]{ phys}
+\end{DoxyParamCaption}
+)}}
+\label{kmem_8h_ae657b8bdbc9148be8fe996a05cc867fc}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{kmem_8h_ae657b8bdbc9148be8fe996a05cc867fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{kmem_8h_ae657b8bdbc9148be8fe996a05cc867fc_icgraph}
+\end{center}
+\end{figure}
+
+

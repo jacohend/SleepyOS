@@ -1,0 +1,69 @@
+SleepyOS by Jacob Henderson
+
+
+CONTENTS:
+1. DOCUMENTATION
+2. THE PLAN
+3. DESCRIPTION OF SLEEPYOS DIRECTORIES AND FILES
+4. INSTRUCTIONS
+______________________________________________
+
+
+
+DOCUMENTATION: Found here (read through it all) and in the .c source files (not .h). See the screenshots and the main.c callgraph (zoom in to the callgraph image if it's too small to read). Results of doxygen code analyzer are in the doxygen folder. Open "index.html" in /documentation/doxygen_analysis_of_code/html to see doxygen's analysis of the source code.
+______________________________________________
+
+
+
+THE PLAN:
+
+I am going to create a simple operating system with task switching. [EDIT NOV 15] Don't know about usermode at this point, I haven't thought about modifying the GDT for the relevant segment register usage.
+
+See "acknowledgments" for crediting, sources, etc.
+
+Further information can be found in the "description of operation" file, the "Timeline" file, and the source code.
+______________________________________________
+
+
+
+DESCRIPTION OF SLEEPYOS DIRECTORIES AND FILES:
+
+DOCS: Docs are here in this directory.
+
+NOV 15: First backup. Look up date under the "Timeline" document for description
+DEC 3: Second backup. See "Timeline" file for description
+Dec 7 broken: Third backup. mildly broken. See "Timeline" for description
+
+SRC:
+see file "description of operation" for more details//
+boot.s          Assembly kernel entry point, recieves multiboot info from bootloader
+main.c 		Main routine of kernel. Also includes basic shell, demo code
+monitor.h 	Monitor driver
+library.h 	Library functions. Attribution to Molloy
+descriptor_tables.h 	GDT and IDT memory tables
+isr.h			interrupt handling methods. links to methods in interrupts.s
+interrupts.s 		turns on/configures interrupts
+timer.h 		demo of PIC timer
+kb.h 			keyboard driver
+kmem.h 			malloc, kernel heap, free, etc
+paging.h		segments memory into pages. had trouble with this one.
+ordered_array.h 	heap and dynamic allocation
+fs.h 			simple vfs filesystem, read/write
+initrd.h 		initializes filesystem
+process.s 		part of multitasking tutorial, abandoned it...paging difficulties
+thread.h 		defines threads structs and switching. 
+task_scheduler.h	round robin scheduler
+________________________________________________
+
+
+INSTRUCTIONS:
+
+You must have bochs emulator and an /mnt directory
+
+Use "make all" in src directory to compile.
+Use ./create_initrd [files] to read files into vfs. 
+Use ./update_image to mount the OS disk image and update it with the vfs image from the main directory and the kernel image from the src directory
+Use ./run_bochs to run the OS disk image in bochs emulator
+Alternatively, you can boot from a provided usb drive on a standard x86 PC to see a demo which I offered, but you use Macs. But I bet there'll be a Mac version of bochs emulator if you wanted to go to the trouble of booting this.
+
+

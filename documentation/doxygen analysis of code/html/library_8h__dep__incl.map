@@ -1,0 +1,29 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$descriptor__tables_8c.html" title="descriptor_tables.c" alt="" coords="589,160,731,189"/>
+<area shape="rect" id="node5" href="$descriptor__tables_8h.html" title="descriptor_tables.h" alt="" coords="555,83,699,112"/>
+<area shape="rect" id="node10" href="$isr_8h.html" title="isr.h" alt="" coords="824,83,872,112"/>
+<area shape="rect" id="node13" href="$isr_8c.html" title="isr.c" alt="" coords="997,160,1043,189"/>
+<area shape="rect" id="node17" href="$paging_8h.html" title="paging.h" alt="" coords="755,160,832,189"/>
+<area shape="rect" id="node26" href="$fs_8h.html" title="fs.h" alt="" coords="27,160,72,189"/>
+<area shape="rect" id="node30" href="$initrd_8h.html" title="initrd.h" alt="" coords="72,237,139,267"/>
+<area shape="rect" id="node37" href="$kmem_8h.html" title="kmem.h" alt="" coords="291,160,365,189"/>
+<area shape="rect" id="node41" href="$task__scheduler_8h.html" title="task_scheduler.h" alt="" coords="213,237,341,267"/>
+<area shape="rect" id="node47" href="$ordered__array_8h.html" title="ordered_array.h" alt="" coords="248,83,371,112"/>
+<area shape="rect" id="node53" href="$monitor_8h.html" title="monitor.h" alt="" coords="1037,83,1120,112"/>
+<area shape="rect" id="node61" href="$kb_8h.html" title="kb.h" alt="" coords="1144,83,1192,112"/>
+<area shape="rect" id="node65" href="$timer_8h.html" title="timer.h" alt="" coords="896,83,963,112"/>
+<area shape="rect" id="node71" href="$library_8c.html" title="library.c" alt="" coords="1397,83,1467,112"/>
+<area shape="rect" id="node73" href="$multiboot_8h.html" title="multiboot.h" alt="" coords="1347,237,1440,267"/>
+<area shape="rect" id="node77" href="$thread_8h.html" title="thread.h" alt="" coords="445,83,520,112"/>
+<area shape="rect" id="node8" href="$main_8c.html" title="main.c" alt="" coords="761,315,825,344"/>
+<area shape="rect" id="node15" href="$kb_8c.html" title="kb.c" alt="" coords="1067,160,1115,189"/>
+<area shape="rect" id="node24" href="$timer_8c.html" title="timer.c" alt="" coords="907,160,973,189"/>
+<area shape="rect" id="node19" href="$kmem_8c.html" title="kmem.c" alt="" coords="365,237,440,267"/>
+<area shape="rect" id="node22" href="$paging_8c.html" title="paging.c" alt="" coords="464,237,539,267"/>
+<area shape="rect" id="node28" href="$fs_8c.html" title="fs.c" alt="" coords="5,237,48,267"/>
+<area shape="rect" id="node32" href="$initrd_8c.html" title="initrd.c" alt="" coords="73,315,137,344"/>
+<area shape="rect" id="node44" href="$task__scheduler_8c.html" title="task_scheduler.c" alt="" coords="213,315,341,344"/>
+<area shape="rect" id="node50" href="$ordered__array_8c.html" title="ordered_array.c" alt="" coords="147,160,267,189"/>
+<area shape="rect" id="node58" href="$monitor_8c.html" title="monitor.c" alt="" coords="1189,160,1272,189"/>
+<area shape="rect" id="node80" href="$thread_8c.html" title="thread.c" alt="" coords="440,160,515,189"/>
+</map>

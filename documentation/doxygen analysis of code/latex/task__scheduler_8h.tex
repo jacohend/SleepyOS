@@ -1,0 +1,140 @@
+\hypertarget{task__scheduler_8h}{
+\section{task\_\-scheduler.h File Reference}
+\label{task__scheduler_8h}\index{task\_\-scheduler.h@{task\_\-scheduler.h}}
+}
+{\ttfamily \#include \char`\"{}library.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}kmem.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}thread.h\char`\"{}}\par
+Include dependency graph for task\_\-scheduler.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{task__scheduler_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{task__scheduler_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structthread__node}{thread\_\-node}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structthread__node}{thread\_\-node} \hyperlink{task__scheduler_8h_ae25441d57db8a06e1fcb0c7dc43ab39f}{thread\_\-stack}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{task__scheduler_8h_a1d4c34efcd96ffbcf843eedef06a5461}{add\_\-thread} (\hyperlink{structthread__table}{thread\_\-table} $\ast$thread)
+\item 
+void \hyperlink{task__scheduler_8h_ade62ee024d2635eadc8360387a0fb1ee}{delete\_\-thread} (\hyperlink{structthread__table}{thread\_\-table} $\ast$thread)
+\item 
+void \hyperlink{task__scheduler_8h_a7d06701ac073c331c83519e3909b7fce}{schedule} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{task__scheduler_8h_ae25441d57db8a06e1fcb0c7dc43ab39f}{
+\index{task\_\-scheduler.h@{task\_\-scheduler.h}!thread\_\-stack@{thread\_\-stack}}
+\index{thread\_\-stack@{thread\_\-stack}!task_scheduler.h@{task\_\-scheduler.h}}
+\subsubsection[{thread\_\-stack}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf thread\_\-node}  {\bf thread\_\-stack}}}
+\label{task__scheduler_8h_ae25441d57db8a06e1fcb0c7dc43ab39f}
+
+
+\subsection{Function Documentation}
+\hypertarget{task__scheduler_8h_a1d4c34efcd96ffbcf843eedef06a5461}{
+\index{task\_\-scheduler.h@{task\_\-scheduler.h}!add\_\-thread@{add\_\-thread}}
+\index{add\_\-thread@{add\_\-thread}!task_scheduler.h@{task\_\-scheduler.h}}
+\subsubsection[{add\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void add\_\-thread (
+\begin{DoxyParamCaption}
+\item[{{\bf thread\_\-table} $\ast$}]{ thread}
+\end{DoxyParamCaption}
+)}}
+\label{task__scheduler_8h_a1d4c34efcd96ffbcf843eedef06a5461}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8h_a1d4c34efcd96ffbcf843eedef06a5461_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8h_a1d4c34efcd96ffbcf843eedef06a5461_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{task__scheduler_8h_ade62ee024d2635eadc8360387a0fb1ee}{
+\index{task\_\-scheduler.h@{task\_\-scheduler.h}!delete\_\-thread@{delete\_\-thread}}
+\index{delete\_\-thread@{delete\_\-thread}!task_scheduler.h@{task\_\-scheduler.h}}
+\subsubsection[{delete\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void delete\_\-thread (
+\begin{DoxyParamCaption}
+\item[{{\bf thread\_\-table} $\ast$}]{ thread}
+\end{DoxyParamCaption}
+)}}
+\label{task__scheduler_8h_ade62ee024d2635eadc8360387a0fb1ee}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8h_ade62ee024d2635eadc8360387a0fb1ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{task__scheduler_8h_a7d06701ac073c331c83519e3909b7fce}{
+\index{task\_\-scheduler.h@{task\_\-scheduler.h}!schedule@{schedule}}
+\index{schedule@{schedule}!task_scheduler.h@{task\_\-scheduler.h}}
+\subsubsection[{schedule}]{\setlength{\rightskip}{0pt plus 5cm}void schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{task__scheduler_8h_a7d06701ac073c331c83519e3909b7fce}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{task__scheduler_8h_a7d06701ac073c331c83519e3909b7fce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8h_a7d06701ac073c331c83519e3909b7fce_icgraph}
+\end{center}
+\end{figure}
+
+

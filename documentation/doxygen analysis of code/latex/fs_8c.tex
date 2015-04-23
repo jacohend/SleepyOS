@@ -1,0 +1,156 @@
+\hypertarget{fs_8c}{
+\section{fs.c File Reference}
+\label{fs_8c}\index{fs.c@{fs.c}}
+}
+{\ttfamily \#include \char`\"{}fs.h\char`\"{}}\par
+Include dependency graph for fs.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{fs_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{fs_8c_ab3d2c74eb086c4bebacb846a191821da}{read\_\-fs} (\hyperlink{structnode}{fs\_\-node} $\ast$\hyperlink{structnode}{node}, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} offset, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{multiboot_8h_a8c5ccb4d457cb24df33a7c9facfa2650}{size}, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} $\ast$buffer)
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{fs_8c_a85297dd9ef416c6be74dafb32a18661c}{write\_\-fs} (\hyperlink{structnode}{fs\_\-node} $\ast$\hyperlink{structnode}{node}, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} offset, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{multiboot_8h_a8c5ccb4d457cb24df33a7c9facfa2650}{size}, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} $\ast$buffer)
+\item 
+void \hyperlink{fs_8c_a0d30b35364e5c886a177bca4e8a04da4}{open\_\-fs} (\hyperlink{structnode}{fs\_\-node} $\ast$\hyperlink{structnode}{node}, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} read, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} write)
+\item 
+void \hyperlink{fs_8c_a688f92b44d9e3ec4c18cae7c3983ec1e}{close\_\-fs} (\hyperlink{structnode}{fs\_\-node} $\ast$\hyperlink{structnode}{node})
+\item 
+struct \hyperlink{structdirent}{dirent} $\ast$ \hyperlink{fs_8c_ac6b382e12dc9d7aa837ede369fb41e8e}{readdir\_\-fs} (\hyperlink{structnode}{fs\_\-node} $\ast$\hyperlink{structnode}{node}, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} i)
+\item 
+\hyperlink{structnode}{fs\_\-node} $\ast$ \hyperlink{fs_8c_a9eb6f75aeaa6c2101297626899532ab7}{finddir\_\-fs} (\hyperlink{structnode}{fs\_\-node} $\ast$\hyperlink{structnode}{node}, char $\ast$name)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnode}{fs\_\-node} $\ast$ \hyperlink{fs_8c_a7e111d5b30877270594a4880df252cff}{root} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{fs_8c_a688f92b44d9e3ec4c18cae7c3983ec1e}{
+\index{fs.c@{fs.c}!close\_\-fs@{close\_\-fs}}
+\index{close\_\-fs@{close\_\-fs}!fs.c@{fs.c}}
+\subsubsection[{close\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}void close\_\-fs (
+\begin{DoxyParamCaption}
+\item[{{\bf fs\_\-node} $\ast$}]{ node}
+\end{DoxyParamCaption}
+)}}
+\label{fs_8c_a688f92b44d9e3ec4c18cae7c3983ec1e}
+\hypertarget{fs_8c_a9eb6f75aeaa6c2101297626899532ab7}{
+\index{fs.c@{fs.c}!finddir\_\-fs@{finddir\_\-fs}}
+\index{finddir\_\-fs@{finddir\_\-fs}!fs.c@{fs.c}}
+\subsubsection[{finddir\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fs\_\-node}$\ast$ finddir\_\-fs (
+\begin{DoxyParamCaption}
+\item[{{\bf fs\_\-node} $\ast$}]{ node, }
+\item[{char $\ast$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{fs_8c_a9eb6f75aeaa6c2101297626899532ab7}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{fs_8c_a9eb6f75aeaa6c2101297626899532ab7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fs_8c_a0d30b35364e5c886a177bca4e8a04da4}{
+\index{fs.c@{fs.c}!open\_\-fs@{open\_\-fs}}
+\index{open\_\-fs@{open\_\-fs}!fs.c@{fs.c}}
+\subsubsection[{open\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}void open\_\-fs (
+\begin{DoxyParamCaption}
+\item[{{\bf fs\_\-node} $\ast$}]{ node, }
+\item[{{\bf u8int}}]{ read, }
+\item[{{\bf u8int}}]{ write}
+\end{DoxyParamCaption}
+)}}
+\label{fs_8c_a0d30b35364e5c886a177bca4e8a04da4}
+\hypertarget{fs_8c_ab3d2c74eb086c4bebacb846a191821da}{
+\index{fs.c@{fs.c}!read\_\-fs@{read\_\-fs}}
+\index{read\_\-fs@{read\_\-fs}!fs.c@{fs.c}}
+\subsubsection[{read\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} read\_\-fs (
+\begin{DoxyParamCaption}
+\item[{{\bf fs\_\-node} $\ast$}]{ node, }
+\item[{{\bf u32int}}]{ offset, }
+\item[{{\bf u32int}}]{ size, }
+\item[{{\bf u8int} $\ast$}]{ buffer}
+\end{DoxyParamCaption}
+)}}
+\label{fs_8c_ab3d2c74eb086c4bebacb846a191821da}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{fs_8c_ab3d2c74eb086c4bebacb846a191821da_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fs_8c_ac6b382e12dc9d7aa837ede369fb41e8e}{
+\index{fs.c@{fs.c}!readdir\_\-fs@{readdir\_\-fs}}
+\index{readdir\_\-fs@{readdir\_\-fs}!fs.c@{fs.c}}
+\subsubsection[{readdir\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf dirent}$\ast$ readdir\_\-fs (
+\begin{DoxyParamCaption}
+\item[{{\bf fs\_\-node} $\ast$}]{ node, }
+\item[{{\bf u32int}}]{ i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{fs_8c_ac6b382e12dc9d7aa837ede369fb41e8e}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{fs_8c_ac6b382e12dc9d7aa837ede369fb41e8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fs_8c_a85297dd9ef416c6be74dafb32a18661c}{
+\index{fs.c@{fs.c}!write\_\-fs@{write\_\-fs}}
+\index{write\_\-fs@{write\_\-fs}!fs.c@{fs.c}}
+\subsubsection[{write\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} write\_\-fs (
+\begin{DoxyParamCaption}
+\item[{{\bf fs\_\-node} $\ast$}]{ node, }
+\item[{{\bf u32int}}]{ offset, }
+\item[{{\bf u32int}}]{ size, }
+\item[{{\bf u8int} $\ast$}]{ buffer}
+\end{DoxyParamCaption}
+)}}
+\label{fs_8c_a85297dd9ef416c6be74dafb32a18661c}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{fs_8c_a85297dd9ef416c6be74dafb32a18661c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{fs_8c_a7e111d5b30877270594a4880df252cff}{
+\index{fs.c@{fs.c}!root@{root}}
+\index{root@{root}!fs.c@{fs.c}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fs\_\-node}$\ast$ {\bf root} = 0}}
+\label{fs_8c_a7e111d5b30877270594a4880df252cff}

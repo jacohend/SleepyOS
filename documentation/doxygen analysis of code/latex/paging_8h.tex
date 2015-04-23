@@ -1,0 +1,194 @@
+\hypertarget{paging_8h}{
+\section{paging.h File Reference}
+\label{paging_8h}\index{paging.h@{paging.h}}
+}
+{\ttfamily \#include \char`\"{}library.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}isr.h\char`\"{}}\par
+Include dependency graph for paging.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{paging_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{paging_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpage}{page}
+\item 
+struct \hyperlink{structpage__table}{page\_\-table}
+\item 
+struct \hyperlink{structpage__directory}{page\_\-directory}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structpage}{page} \hyperlink{paging_8h_aa0e3e0076c5878f98e94c9a24225503a}{page\_\-properties}
+\item 
+typedef struct \hyperlink{structpage__table}{page\_\-table} \hyperlink{paging_8h_a12a0505a7020b9bc05b8a77f5519b7e5}{page\_\-array}
+\item 
+typedef struct \hyperlink{structpage__directory}{page\_\-directory} \hyperlink{paging_8h_acd32f3ea1603dc3a6f118c30ef24e742}{page\_\-directory\_\-table}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{paging_8h_a9e357eddcd68888eeaef2b8f86d0cc10}{initialize\_\-paging} ()
+\item 
+void \hyperlink{paging_8h_a0dd608cd43735cda39355a17be12e62c}{switch\_\-page\_\-directory} (\hyperlink{structpage__directory}{page\_\-directory\_\-table} $\ast$new)
+\item 
+\hyperlink{structpage}{page\_\-properties} $\ast$ \hyperlink{paging_8h_ac65afaa24b68ab7b8a8438edd0d9f65f}{get\_\-page} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} address, int make, \hyperlink{structpage__directory}{page\_\-directory\_\-table} $\ast$dir)
+\item 
+void \hyperlink{paging_8h_a6293af8e675059a566216be86660854b}{page\_\-fault} (\hyperlink{structregisters}{registers\_\-t} regs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{paging_8h_a12a0505a7020b9bc05b8a77f5519b7e5}{
+\index{paging.h@{paging.h}!page\_\-array@{page\_\-array}}
+\index{page\_\-array@{page\_\-array}!paging.h@{paging.h}}
+\subsubsection[{page\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf page\_\-table}  {\bf page\_\-array}}}
+\label{paging_8h_a12a0505a7020b9bc05b8a77f5519b7e5}
+\hypertarget{paging_8h_acd32f3ea1603dc3a6f118c30ef24e742}{
+\index{paging.h@{paging.h}!page\_\-directory\_\-table@{page\_\-directory\_\-table}}
+\index{page\_\-directory\_\-table@{page\_\-directory\_\-table}!paging.h@{paging.h}}
+\subsubsection[{page\_\-directory\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf page\_\-directory}  {\bf page\_\-directory\_\-table}}}
+\label{paging_8h_acd32f3ea1603dc3a6f118c30ef24e742}
+\hypertarget{paging_8h_aa0e3e0076c5878f98e94c9a24225503a}{
+\index{paging.h@{paging.h}!page\_\-properties@{page\_\-properties}}
+\index{page\_\-properties@{page\_\-properties}!paging.h@{paging.h}}
+\subsubsection[{page\_\-properties}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf page}  {\bf page\_\-properties}}}
+\label{paging_8h_aa0e3e0076c5878f98e94c9a24225503a}
+
+
+\subsection{Function Documentation}
+\hypertarget{paging_8h_ac65afaa24b68ab7b8a8438edd0d9f65f}{
+\index{paging.h@{paging.h}!get\_\-page@{get\_\-page}}
+\index{get\_\-page@{get\_\-page}!paging.h@{paging.h}}
+\subsubsection[{get\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page\_\-properties}$\ast$ get\_\-page (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ address, }
+\item[{int}]{ make, }
+\item[{{\bf page\_\-directory\_\-table} $\ast$}]{ dir}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8h_ac65afaa24b68ab7b8a8438edd0d9f65f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8h_ac65afaa24b68ab7b8a8438edd0d9f65f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8h_ac65afaa24b68ab7b8a8438edd0d9f65f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8h_a9e357eddcd68888eeaef2b8f86d0cc10}{
+\index{paging.h@{paging.h}!initialize\_\-paging@{initialize\_\-paging}}
+\index{initialize\_\-paging@{initialize\_\-paging}!paging.h@{paging.h}}
+\subsubsection[{initialize\_\-paging}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\_\-paging (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8h_a9e357eddcd68888eeaef2b8f86d0cc10}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8h_a9e357eddcd68888eeaef2b8f86d0cc10_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{paging_8h_a9e357eddcd68888eeaef2b8f86d0cc10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8h_a6293af8e675059a566216be86660854b}{
+\index{paging.h@{paging.h}!page\_\-fault@{page\_\-fault}}
+\index{page\_\-fault@{page\_\-fault}!paging.h@{paging.h}}
+\subsubsection[{page\_\-fault}]{\setlength{\rightskip}{0pt plus 5cm}void page\_\-fault (
+\begin{DoxyParamCaption}
+\item[{{\bf registers\_\-t}}]{ regs}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8h_a6293af8e675059a566216be86660854b}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8h_a6293af8e675059a566216be86660854b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=354pt]{paging_8h_a6293af8e675059a566216be86660854b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8h_a0dd608cd43735cda39355a17be12e62c}{
+\index{paging.h@{paging.h}!switch\_\-page\_\-directory@{switch\_\-page\_\-directory}}
+\index{switch\_\-page\_\-directory@{switch\_\-page\_\-directory}!paging.h@{paging.h}}
+\subsubsection[{switch\_\-page\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}void switch\_\-page\_\-directory (
+\begin{DoxyParamCaption}
+\item[{{\bf page\_\-directory\_\-table} $\ast$}]{ new}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8h_a0dd608cd43735cda39355a17be12e62c}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8h_a0dd608cd43735cda39355a17be12e62c_icgraph}
+\end{center}
+\end{figure}
+
+

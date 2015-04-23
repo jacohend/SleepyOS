@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$kb_8h.html#af112cb1fbdb49ab060a2a4756f15c824" title="keyboard_handler" alt="" coords="96,5,232,35"/>
+<area shape="rect" id="node7" href="$main_8c.html#aadc3032405d2fec2af8f88528c28f0af" title="typing" alt="" coords="133,59,195,88"/>
+<area shape="rect" id="node5" href="$kb_8h.html#ac3a72156d4bbba013e4d62801992794d" title="init_keyboard" alt="" coords="280,5,387,35"/>
+<area shape="rect" id="node9" href="$main_8c.html#a16c893b53820ad7c0b29142e27b82bd1" title="init_typing" alt="" coords="291,59,376,88"/>
+<area shape="rect" id="node11" href="$main_8c.html#ac49ac80cff1a0caa471dbd92f8d4689b" title="main" alt="" coords="436,59,489,88"/>
+</map>

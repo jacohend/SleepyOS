@@ -1,0 +1,47 @@
+Jacob Henderson
+Version History of SleepyOS
+
+
+November 11:
+
+Looked at OSdev wiki tutorial and theory sections. Began following James Molloy's tutorial for setting up a compiler environment 
+and a bootable/emulatable disk image for testing. Built test kernel that wrote to the screen via an output port using functions from 
+Molloy, Bran, and GNU C library functions. 
+
+November 13:
+
+Started to figure out Global Descriptor Table, decided I would forgo segmentation at this stage. 
+Started looking at Interrupt Descriptor Table, it looks much more useful. Beginning implemention of IDT, IRQs, and Interrupts. 
+I'm basing the IDT off of James Molloy's implementation, but it's literally identical to every basic IDT out there.
+
+November 14:
+
+Interrupts working, basic Programmable Interval Timer and demo code for timer output is working. 
+Decided to implement a GDT, but I could care less about implementing user mode memory segmentation at this point.
+
+November 15:
+
+Got a basic demo interpreter loop. Going to start on Paging so I can build a memory manager.
+
+December 3:
+
+Working on vfs using Molloy's tutorial as a basis. Hoping to integrate ELF programming loading later
+
+December 5:
+
+Got vfs working after a series of bizarre page faults (probably arising from an older version of malloc I was using), along with a simple interpreter. Working on loading and running hex binaries.
+
+December 6:
+
+Takes too long to figure out how to parse ELF headers, I'm on a deadline for crying out loud. Forget loading binaries for now, I just wasted a night on it. I did, however, right a write_fs() function in the vfs in order to at least edit existing filesystem files. However, I suspect writing entirely new files would require remounting the entire filesystem, and I don't want to think about that right now.
+
+December 7:
+
+I did something to paging while trying to implement copying of page directories for fork() function. Doesn't work right, it gives me a page fault near the end of memory. Leaving it in backup copy, reverting to previous branch. The code seems to fail during initialize_paging(), but I suspect the idea is really somewhere in the memory/heap allocation functions toward the end of kmem.c
+
+Instead of multitasking using fork(), I'll try block multithreading using a thread scheduler which implements context switching of registers. 
+
+December 8: 
+
+Done. round-robin schedule done. See the source code in main.c under the "interpret()" function. It's under the "threadingdemo" command string. Demo seems alright. You just pass a function pointer to the create_thread function, and then execute "add_thread" on the resulting thread to add it to the scheduler queue. Then just run "schedule()", and the scheduler will switch contexts until all threads are completed.
+

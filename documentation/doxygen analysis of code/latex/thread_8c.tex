@@ -1,0 +1,122 @@
+\hypertarget{thread_8c}{
+\section{thread.c File Reference}
+\label{thread_8c}\index{thread.c@{thread.c}}
+}
+{\ttfamily \#include \char`\"{}thread.h\char`\"{}}\par
+Include dependency graph for thread.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{thread_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structthread__table}{thread\_\-table} $\ast$ \hyperlink{thread_8c_aa2a39fca5681a4beacaa4281920583d2}{init\_\-threading} ()
+\item 
+\hyperlink{structthread__table}{thread\_\-table} $\ast$ \hyperlink{thread_8c_a9707ba7ac627ac3beacb73cde0120d5d}{create\_\-thread} (int($\ast$fn)(void $\ast$), void $\ast$arg, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} $\ast$\hyperlink{task__scheduler_8c_a61fba26c3b3eb89fbf4585287349ec2a}{stack})
+\item 
+void \hyperlink{thread_8c_a5e959cc9af3cc0159843f193c5250c5c}{switch\_\-thread} (\hyperlink{structthread__table}{thread\_\-table} $\ast$next)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structthread__table}{thread\_\-table} $\ast$ \hyperlink{thread_8c_a8cd83186c97097c19acb22f76f3680c2}{current\_\-thread}
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{thread_8c_ab0c7f49f555fdb161de96d0b3b8602b7}{next\_\-tid} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{thread_8c_a9707ba7ac627ac3beacb73cde0120d5d}{
+\index{thread.c@{thread.c}!create\_\-thread@{create\_\-thread}}
+\index{create\_\-thread@{create\_\-thread}!thread.c@{thread.c}}
+\subsubsection[{create\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-table}$\ast$ create\_\-thread (
+\begin{DoxyParamCaption}
+\item[{int($\ast$)(void $\ast$)}]{ fn, }
+\item[{void $\ast$}]{ arg, }
+\item[{{\bf u32int} $\ast$}]{ stack}
+\end{DoxyParamCaption}
+)}}
+\label{thread_8c_a9707ba7ac627ac3beacb73cde0120d5d}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8c_a9707ba7ac627ac3beacb73cde0120d5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8c_a9707ba7ac627ac3beacb73cde0120d5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{thread_8c_aa2a39fca5681a4beacaa4281920583d2}{
+\index{thread.c@{thread.c}!init\_\-threading@{init\_\-threading}}
+\index{init\_\-threading@{init\_\-threading}!thread.c@{thread.c}}
+\subsubsection[{init\_\-threading}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-table}$\ast$ init\_\-threading (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{thread_8c_aa2a39fca5681a4beacaa4281920583d2}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8c_aa2a39fca5681a4beacaa4281920583d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{thread_8c_a5e959cc9af3cc0159843f193c5250c5c}{
+\index{thread.c@{thread.c}!switch\_\-thread@{switch\_\-thread}}
+\index{switch\_\-thread@{switch\_\-thread}!thread.c@{thread.c}}
+\subsubsection[{switch\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void switch\_\-thread (
+\begin{DoxyParamCaption}
+\item[{{\bf thread\_\-table} $\ast$}]{ next}
+\end{DoxyParamCaption}
+)}}
+\label{thread_8c_a5e959cc9af3cc0159843f193c5250c5c}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{thread_8c_a5e959cc9af3cc0159843f193c5250c5c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{thread_8c_a8cd83186c97097c19acb22f76f3680c2}{
+\index{thread.c@{thread.c}!current\_\-thread@{current\_\-thread}}
+\index{current\_\-thread@{current\_\-thread}!thread.c@{thread.c}}
+\subsubsection[{current\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-table}$\ast$ {\bf current\_\-thread}}}
+\label{thread_8c_a8cd83186c97097c19acb22f76f3680c2}
+\hypertarget{thread_8c_ab0c7f49f555fdb161de96d0b3b8602b7}{
+\index{thread.c@{thread.c}!next\_\-tid@{next\_\-tid}}
+\index{next\_\-tid@{next\_\-tid}!thread.c@{thread.c}}
+\subsubsection[{next\_\-tid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} {\bf next\_\-tid} = 0}}
+\label{thread_8c_ab0c7f49f555fdb161de96d0b3b8602b7}

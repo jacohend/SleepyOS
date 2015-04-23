@@ -1,0 +1,166 @@
+\hypertarget{library_8h}{
+\section{library.h File Reference}
+\label{library_8h}\index{library.h@{library.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{library_8h_a101586fab2b90a8adffe50a3550e235d}{ASSERT}(b)~((b) ? (void)0 : kassert(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \#b))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int}
+\item 
+typedef int \hyperlink{library_8h_a61350201bbcea1180bb1160bd09b717f}{s32int}
+\item 
+typedef unsigned short \hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int}
+\item 
+typedef short \hyperlink{library_8h_ad039e929f72cfdb80d3a96ac1f7d9c3d}{s16int}
+\item 
+typedef unsigned char \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int}
+\item 
+typedef char \hyperlink{library_8h_afa805b2bbcb6f0e85de57cef336f98df}{s8int}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{library_8h_a26737c398b5d6f6f5052d174fb3ca0c0}{outb} (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} port, \hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} value)
+\item 
+\hyperlink{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int} \hyperlink{library_8h_a3d758e66f0e4acaf38ba39b58ce83e4d}{inb} (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} port)
+\item 
+\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} \hyperlink{library_8h_a3dcbb9e13203beb0e38956999e8ae61d}{inw} (\hyperlink{library_8h_a863d9497073aad2b991aeab2211d87af}{u16int} port)
+\item 
+void \hyperlink{library_8h_aea386e96bb74fcc02c10166ab7118019}{kassert} (const char $\ast$file, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} line, const char $\ast$desc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{library_8h_a101586fab2b90a8adffe50a3550e235d}{
+\index{library.h@{library.h}!ASSERT@{ASSERT}}
+\index{ASSERT@{ASSERT}!library.h@{library.h}}
+\subsubsection[{ASSERT}]{\setlength{\rightskip}{0pt plus 5cm}\#define ASSERT(
+\begin{DoxyParamCaption}
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~((b) ? (void)0 : kassert(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \#b))}}
+\label{library_8h_a101586fab2b90a8adffe50a3550e235d}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{library_8h_ad039e929f72cfdb80d3a96ac1f7d9c3d}{
+\index{library.h@{library.h}!s16int@{s16int}}
+\index{s16int@{s16int}!library.h@{library.h}}
+\subsubsection[{s16int}]{\setlength{\rightskip}{0pt plus 5cm}typedef short {\bf s16int}}}
+\label{library_8h_ad039e929f72cfdb80d3a96ac1f7d9c3d}
+\hypertarget{library_8h_a61350201bbcea1180bb1160bd09b717f}{
+\index{library.h@{library.h}!s32int@{s32int}}
+\index{s32int@{s32int}!library.h@{library.h}}
+\subsubsection[{s32int}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf s32int}}}
+\label{library_8h_a61350201bbcea1180bb1160bd09b717f}
+\hypertarget{library_8h_afa805b2bbcb6f0e85de57cef336f98df}{
+\index{library.h@{library.h}!s8int@{s8int}}
+\index{s8int@{s8int}!library.h@{library.h}}
+\subsubsection[{s8int}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf s8int}}}
+\label{library_8h_afa805b2bbcb6f0e85de57cef336f98df}
+\hypertarget{library_8h_a863d9497073aad2b991aeab2211d87af}{
+\index{library.h@{library.h}!u16int@{u16int}}
+\index{u16int@{u16int}!library.h@{library.h}}
+\subsubsection[{u16int}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf u16int}}}
+\label{library_8h_a863d9497073aad2b991aeab2211d87af}
+\hypertarget{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{
+\index{library.h@{library.h}!u32int@{u32int}}
+\index{u32int@{u32int}!library.h@{library.h}}
+\subsubsection[{u32int}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf u32int}}}
+\label{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}
+\hypertarget{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}{
+\index{library.h@{library.h}!u8int@{u8int}}
+\index{u8int@{u8int}!library.h@{library.h}}
+\subsubsection[{u8int}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf u8int}}}
+\label{library_8h_a1026e682ffdadc1701c42cd44ce9efcf}
+
+
+\subsection{Function Documentation}
+\hypertarget{library_8h_a3d758e66f0e4acaf38ba39b58ce83e4d}{
+\index{library.h@{library.h}!inb@{inb}}
+\index{inb@{inb}!library.h@{library.h}}
+\subsubsection[{inb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u8int} inb (
+\begin{DoxyParamCaption}
+\item[{{\bf u16int}}]{ port}
+\end{DoxyParamCaption}
+)}}
+\label{library_8h_a3d758e66f0e4acaf38ba39b58ce83e4d}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8h_a3d758e66f0e4acaf38ba39b58ce83e4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8h_a3dcbb9e13203beb0e38956999e8ae61d}{
+\index{library.h@{library.h}!inw@{inw}}
+\index{inw@{inw}!library.h@{library.h}}
+\subsubsection[{inw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16int} inw (
+\begin{DoxyParamCaption}
+\item[{{\bf u16int}}]{ port}
+\end{DoxyParamCaption}
+)}}
+\label{library_8h_a3dcbb9e13203beb0e38956999e8ae61d}
+\hypertarget{library_8h_aea386e96bb74fcc02c10166ab7118019}{
+\index{library.h@{library.h}!kassert@{kassert}}
+\index{kassert@{kassert}!library.h@{library.h}}
+\subsubsection[{kassert}]{\setlength{\rightskip}{0pt plus 5cm}void kassert (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ file, }
+\item[{{\bf u32int}}]{ line, }
+\item[{const char $\ast$}]{ desc}
+\end{DoxyParamCaption}
+)}}
+\label{library_8h_aea386e96bb74fcc02c10166ab7118019}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8h_aea386e96bb74fcc02c10166ab7118019_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{library_8h_a26737c398b5d6f6f5052d174fb3ca0c0}{
+\index{library.h@{library.h}!outb@{outb}}
+\index{outb@{outb}!library.h@{library.h}}
+\subsubsection[{outb}]{\setlength{\rightskip}{0pt plus 5cm}void outb (
+\begin{DoxyParamCaption}
+\item[{{\bf u16int}}]{ port, }
+\item[{{\bf u8int}}]{ value}
+\end{DoxyParamCaption}
+)}}
+\label{library_8h_a26737c398b5d6f6f5052d174fb3ca0c0}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{library_8h_a26737c398b5d6f6f5052d174fb3ca0c0_icgraph}
+\end{center}
+\end{figure}
+
+

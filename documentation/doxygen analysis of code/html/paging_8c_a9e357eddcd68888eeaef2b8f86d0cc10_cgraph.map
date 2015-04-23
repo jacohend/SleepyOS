@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$paging_8c.html#abec6551c0c913d3f198e9482052ff591" title="alloc_frame" alt="" coords="223,19,319,48"/>
+<area shape="rect" id="node11" href="$kmem_8c.html#af2694f380b875f9fc0db5cef82ef6222" title="create_heap" alt="" coords="220,213,321,243"/>
+<area shape="rect" id="node15" href="$kmem_8c.html#ae657b8bdbc9148be8fe996a05cc867fc" title="kmalloc" alt="" coords="456,213,525,243"/>
+<area shape="rect" id="node25" href="$paging_8c.html#ac65afaa24b68ab7b8a8438edd0d9f65f" title="get_page" alt="" coords="629,291,712,320"/>
+<area shape="rect" id="node30" href="$library_8c.html#adfcaf609e8c4624d62c20198d20d4156" title="memset" alt="" coords="633,356,708,385"/>
+<area shape="rect" id="node35" href="$paging_8c.html#a6293af8e675059a566216be86660854b" title="page_fault" alt="" coords="227,97,315,127"/>
+<area shape="rect" id="node43" href="$isr_8c.html#ad7ed61410af379195146753d5b45048e" title="register_interrupt_handler" alt="" coords="177,421,364,451"/>
+<area shape="rect" id="node45" href="$paging_8c.html#a15e4d1dc324e65819e9375f65b45eb3a" title="switch_page_directory" alt="" coords="189,475,352,504"/>
+<area shape="rect" id="node5" href="$paging_8c.html#aeb12c060bb8a123dc6a89b3fdcecb4cf" title="PANIC" alt="" coords="461,5,520,35"/>
+<area shape="rect" id="node7" href="$monitor_8c.html#a36a271d53b3d189c49e9bf30c4b17514" title="monitor_write" alt="" coords="616,57,725,87"/>
+<area shape="rect" id="node9" href="$monitor_8c.html#a9f9e8bf5768ca790a071e57c3ed0b869" title="monitor_put" alt="" coords="808,84,907,113"/>
+<area shape="rect" id="node13" href="$ordered__array_8c.html#a51d0520226774405d3156e493d8cc394" title="insert_ordered_array" alt="" coords="780,168,935,197"/>
+<area shape="rect" id="node28" href="$ordered__array_8c.html#a699f8fd099dd66db8706136f5436a4b0" title="place_ordered_array" alt="" coords="415,267,567,296"/>
+<area shape="rect" id="node17" href="$kmem_8c.html#add3c06b419bd2487b79def1ca4784079" title="alloc" alt="" coords="645,237,696,267"/>
+<area shape="rect" id="node21" href="$ordered__array_8c.html#aaeda111577ef7f22374e372113d9efd7" title="lookup_ordered_array" alt="" coords="777,232,937,261"/>
+<area shape="rect" id="node23" href="$ordered__array_8c.html#a315f58ff35d7ee215d9537198857e7f8" title="remove_ordered_array" alt="" coords="773,285,941,315"/>
+<area shape="rect" id="node38" href="$monitor_8c.html#ac24b66a1f1a634b7a032d09b7b9803f7" title="monitor_write_hex" alt="" coords="421,109,560,139"/>
+</map>

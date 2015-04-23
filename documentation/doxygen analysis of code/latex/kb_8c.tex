@@ -1,0 +1,116 @@
+\hypertarget{kb_8c}{
+\section{kb.c File Reference}
+\label{kb_8c}\index{kb.c@{kb.c}}
+}
+{\ttfamily \#include \char`\"{}kb.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}isr.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}timer.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}monitor.h\char`\"{}}\par
+Include dependency graph for kb.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{kb_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{kb_8c_a59edcefd8f0e0692f820c30b09a4de71}{key\_\-lookup} (int index)
+\item 
+void \hyperlink{kb_8c_aed521c3ef126f60e3cd8ba1f90028771}{keyboard\_\-handler} (\hyperlink{structregisters}{registers\_\-t} regs)
+\item 
+void \hyperlink{kb_8c_ac3a72156d4bbba013e4d62801992794d}{init\_\-keyboard} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{kb_8c_aa899d5f48da79692b437a3cf9c475c46}{kbarray} \mbox{[}128\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{kb_8c_ac3a72156d4bbba013e4d62801992794d}{
+\index{kb.c@{kb.c}!init\_\-keyboard@{init\_\-keyboard}}
+\index{init\_\-keyboard@{init\_\-keyboard}!kb.c@{kb.c}}
+\subsubsection[{init\_\-keyboard}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-keyboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{kb_8c_ac3a72156d4bbba013e4d62801992794d}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{kb_8c_ac3a72156d4bbba013e4d62801992794d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{kb_8c_a59edcefd8f0e0692f820c30b09a4de71}{
+\index{kb.c@{kb.c}!key\_\-lookup@{key\_\-lookup}}
+\index{key\_\-lookup@{key\_\-lookup}!kb.c@{kb.c}}
+\subsubsection[{key\_\-lookup}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char key\_\-lookup (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{kb_8c_a59edcefd8f0e0692f820c30b09a4de71}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{kb_8c_a59edcefd8f0e0692f820c30b09a4de71_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{kb_8c_aed521c3ef126f60e3cd8ba1f90028771}{
+\index{kb.c@{kb.c}!keyboard\_\-handler@{keyboard\_\-handler}}
+\index{keyboard\_\-handler@{keyboard\_\-handler}!kb.c@{kb.c}}
+\subsubsection[{keyboard\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}void keyboard\_\-handler (
+\begin{DoxyParamCaption}
+\item[{{\bf registers\_\-t}}]{ regs}
+\end{DoxyParamCaption}
+)}}
+\label{kb_8c_aed521c3ef126f60e3cd8ba1f90028771}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{kb_8c_aed521c3ef126f60e3cd8ba1f90028771_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{kb_8c_aed521c3ef126f60e3cd8ba1f90028771_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{kb_8c_aa899d5f48da79692b437a3cf9c475c46}{
+\index{kb.c@{kb.c}!kbarray@{kbarray}}
+\index{kbarray@{kbarray}!kb.c@{kb.c}}
+\subsubsection[{kbarray}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf kbarray}\mbox{[}128\mbox{]}}}
+\label{kb_8c_aa899d5f48da79692b437a3cf9c475c46}

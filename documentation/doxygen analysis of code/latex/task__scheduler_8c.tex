@@ -1,0 +1,132 @@
+\hypertarget{task__scheduler_8c}{
+\section{task\_\-scheduler.c File Reference}
+\label{task__scheduler_8c}\index{task\_\-scheduler.c@{task\_\-scheduler.c}}
+}
+{\ttfamily \#include \char`\"{}task\_\-scheduler.h\char`\"{}}\par
+Include dependency graph for task\_\-scheduler.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{task__scheduler_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{task__scheduler_8c_a1d4c34efcd96ffbcf843eedef06a5461}{add\_\-thread} (\hyperlink{structthread__table}{thread\_\-table} $\ast$thread)
+\item 
+void \hyperlink{task__scheduler_8c_ade62ee024d2635eadc8360387a0fb1ee}{delete\_\-thread} (\hyperlink{structthread__table}{thread\_\-table} $\ast$thread)
+\item 
+void \hyperlink{task__scheduler_8c_a7d06701ac073c331c83519e3909b7fce}{schedule} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structthread__node}{thread\_\-stack} $\ast$ \hyperlink{task__scheduler_8c_a61fba26c3b3eb89fbf4585287349ec2a}{stack} = 0
+\item 
+\hyperlink{structthread__node}{thread\_\-stack} $\ast$ \hyperlink{task__scheduler_8c_a3d31f4ff1167a9a05814f8885b8074cd}{now} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{task__scheduler_8c_a1d4c34efcd96ffbcf843eedef06a5461}{
+\index{task\_\-scheduler.c@{task\_\-scheduler.c}!add\_\-thread@{add\_\-thread}}
+\index{add\_\-thread@{add\_\-thread}!task_scheduler.c@{task\_\-scheduler.c}}
+\subsubsection[{add\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void add\_\-thread (
+\begin{DoxyParamCaption}
+\item[{{\bf thread\_\-table} $\ast$}]{ thread}
+\end{DoxyParamCaption}
+)}}
+\label{task__scheduler_8c_a1d4c34efcd96ffbcf843eedef06a5461}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8c_a1d4c34efcd96ffbcf843eedef06a5461_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8c_a1d4c34efcd96ffbcf843eedef06a5461_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{task__scheduler_8c_ade62ee024d2635eadc8360387a0fb1ee}{
+\index{task\_\-scheduler.c@{task\_\-scheduler.c}!delete\_\-thread@{delete\_\-thread}}
+\index{delete\_\-thread@{delete\_\-thread}!task_scheduler.c@{task\_\-scheduler.c}}
+\subsubsection[{delete\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void delete\_\-thread (
+\begin{DoxyParamCaption}
+\item[{{\bf thread\_\-table} $\ast$}]{ thread}
+\end{DoxyParamCaption}
+)}}
+\label{task__scheduler_8c_ade62ee024d2635eadc8360387a0fb1ee}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8c_ade62ee024d2635eadc8360387a0fb1ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{task__scheduler_8c_a7d06701ac073c331c83519e3909b7fce}{
+\index{task\_\-scheduler.c@{task\_\-scheduler.c}!schedule@{schedule}}
+\index{schedule@{schedule}!task_scheduler.c@{task\_\-scheduler.c}}
+\subsubsection[{schedule}]{\setlength{\rightskip}{0pt plus 5cm}void schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{task__scheduler_8c_a7d06701ac073c331c83519e3909b7fce}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{task__scheduler_8c_a7d06701ac073c331c83519e3909b7fce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{task__scheduler_8c_a7d06701ac073c331c83519e3909b7fce_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{task__scheduler_8c_a3d31f4ff1167a9a05814f8885b8074cd}{
+\index{task\_\-scheduler.c@{task\_\-scheduler.c}!now@{now}}
+\index{now@{now}!task_scheduler.c@{task\_\-scheduler.c}}
+\subsubsection[{now}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-stack}$\ast$ {\bf now} = 0}}
+\label{task__scheduler_8c_a3d31f4ff1167a9a05814f8885b8074cd}
+\hypertarget{task__scheduler_8c_a61fba26c3b3eb89fbf4585287349ec2a}{
+\index{task\_\-scheduler.c@{task\_\-scheduler.c}!stack@{stack}}
+\index{stack@{stack}!task_scheduler.c@{task\_\-scheduler.c}}
+\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf thread\_\-stack}$\ast$ {\bf stack} = 0}}
+\label{task__scheduler_8c_a61fba26c3b3eb89fbf4585287349ec2a}

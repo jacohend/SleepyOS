@@ -1,0 +1,55 @@
+SleepyOS by Jacob Henderson
+
+
+
+The kernel call graph (kernel_call_graph.png, zoom into the photo to read it) can be found in the same directory as this description.
+
+DESCRIPTION OF OPERATION:
+
+This system uses the open source software GRUB (GRand Unified Bootloader). It loads the kernel ELF file and the filesystem module, initrd.img
+
+initrd.img is created using ./initrd_create in the root SleepyOS directory. It takes files as command line arguments, then writes them to a virtual filesystem image.
+
+
+Boot:
+
+The bootloader queries the bios for system information (including other modules, such as the fs module) and places it in a multiboot struct. 
+
+The bootloader points to the kernel boot code, written in assembler and represented in the source as boot.s. 
+
+
+Operating System Execution
+
+The boot.s populates the kernel's multiboot struct with the relevant data and then calls the kernel in main.c
+
+The kernel segments memory with the global descriptor table and sets up interrupt tables with the interrupt descriptor tables. Code primarily found in idt.c
+
+The kernel clears the monitor to prepare for interaction with the user. Function: monitor.clear() found in monitor.c
+
+The kernel sets interrupts by executing the "sti" assembly command
+
+The kernel looks at the multiboot struct it received as an argument to see if there are any other data structures on disk.
+
+The kernel uses the multiboot struct to define the beginning and end of any filesystem modules that were detected
+
+The kernel mandates that useable memory only comes after the filesystem module in memory.
+
+The kernel initializes paging beginning at the addresses after the filesystem. Memory is split into 4 kb pages, each with their own rw permissions and "is_used?" flags
+
+The kernel initializes the ramdisk virtual filesystem, assigning the resulting filesystem node tree to a root node variable.
+
+The kernel clears the monitor of all initialization notifications
+
+The kernel initializes an typing() interrupt handler which reads input from the keyboard. 
+
+The handler collects key input in a buffer and passes it to the interpret() function whenever "enter" ('\n') is pressed. 
+
+The interpret() function acts as a basic shell which can call various operations on the filesystem or execute a thread demo. Unless the user executes the thread demo, the shell will continue to flush the input buffer and loop every time the "enter" key is pressed.
+
+The thread demo creates a thread data structure containing an address to a function and some arguments and places them in a pseudo-stack (an integer pointer, basically). Thread code can be found in thread.c
+
+The thread-switcher respectively grabs the current stack pointer, base pointer, frame pointer, source index pointer, and destination index pointer registers (esp, ebp, ebx, esi, edi in x86) and puts them into a pseudo-stack, thus saving state of the current thread. Then it moves the stack of the next thread into these registers, switching contexts. It is called from the schedule() function found in task_scheduler.c
+
+ 
+
+

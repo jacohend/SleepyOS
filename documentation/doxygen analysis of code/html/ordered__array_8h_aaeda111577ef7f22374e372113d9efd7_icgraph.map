@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$kmem_8h.html#add3c06b419bd2487b79def1ca4784079" title="alloc" alt="" coords="216,347,267,376"/>
+<area shape="rect" id="node39" href="$kmem_8h.html#a266d3a15c9fa224ed24a31f38d50a8b8" title="free" alt="" coords="219,439,264,468"/>
+<area shape="rect" id="node6" href="$kmem_8h.html#ae657b8bdbc9148be8fe996a05cc867fc" title="kmalloc" alt="" coords="316,269,385,299"/>
+<area shape="rect" id="node8" href="$task__scheduler_8h.html#a1d4c34efcd96ffbcf843eedef06a5461" title="add_thread" alt="" coords="468,112,561,141"/>
+<area shape="rect" id="node10" href="$main_8c.html#aeec8fb0aa4c6922ab518df077d175f1c" title="interpret" alt="" coords="665,139,743,168"/>
+<area shape="rect" id="node18" href="$kmem_8h.html#ac02ebd06b04359186655dde563d5e72a" title="create_heap" alt="" coords="464,216,565,245"/>
+<area shape="rect" id="node20" href="$paging_8h.html#a9e357eddcd68888eeaef2b8f86d0cc10" title="initialize_paging" alt="" coords="643,321,765,351"/>
+<area shape="rect" id="node23" href="$ordered__array_8h.html#acb4414c2ae0d5f6f02f5b8c03c69b32b" title="create_ordered_array" alt="" coords="435,269,595,299"/>
+<area shape="rect" id="node25" href="$thread_8h.html#a9707ba7ac627ac3beacb73cde0120d5d" title="create_thread" alt="" coords="459,59,571,88"/>
+<area shape="rect" id="node28" href="$paging_8h.html#ac65afaa24b68ab7b8a8438edd0d9f65f" title="get_page" alt="" coords="473,373,556,403"/>
+<area shape="rect" id="node32" href="$initrd_8h.html#a9666df78f72f566cb55f7adee3070432" title="init_initrd" alt="" coords="813,399,893,428"/>
+<area shape="rect" id="node35" href="$thread_8h.html#aa2a39fca5681a4beacaa4281920583d2" title="init_threading" alt="" coords="460,5,569,35"/>
+<area shape="rect" id="node12" href="$main_8c.html#aadc3032405d2fec2af8f88528c28f0af" title="typing" alt="" coords="823,172,884,201"/>
+<area shape="rect" id="node14" href="$main_8c.html#a16c893b53820ad7c0b29142e27b82bd1" title="init_typing" alt="" coords="943,237,1028,267"/>
+<area shape="rect" id="node16" href="$main_8c.html#ac49ac80cff1a0caa471dbd92f8d4689b" title="main" alt="" coords="1079,321,1132,351"/>
+<area shape="rect" id="node41" href="$kmem_8h.html#af7105034bf054e37218d6ade20db4684" title="kfree" alt="" coords="324,457,377,487"/>
+<area shape="rect" id="node43" href="$task__scheduler_8h.html#ade62ee024d2635eadc8360387a0fb1ee" title="delete_thread" alt="" coords="460,477,569,507"/>
+</map>

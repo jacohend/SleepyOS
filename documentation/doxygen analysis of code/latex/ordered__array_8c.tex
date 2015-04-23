@@ -1,0 +1,175 @@
+\hypertarget{ordered__array_8c}{
+\section{ordered\_\-array.c File Reference}
+\label{ordered__array_8c}\index{ordered\_\-array.c@{ordered\_\-array.c}}
+}
+{\ttfamily \#include \char`\"{}ordered\_\-array.h\char`\"{}}\par
+Include dependency graph for ordered\_\-array.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{ordered__array_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{library_8h_afa805b2bbcb6f0e85de57cef336f98df}{s8int} \hyperlink{ordered__array_8c_a3462e94d4df3f7237f39641fb90a7fa4}{standard\_\-lessthan\_\-predicate} (\hyperlink{ordered__array_8h_acece46f31fb63617f4e9798b0dec1694}{type\_\-t} a, \hyperlink{ordered__array_8h_acece46f31fb63617f4e9798b0dec1694}{type\_\-t} b)
+\item 
+\hyperlink{structordered__array__t}{ordered\_\-array\_\-t} \hyperlink{ordered__array_8c_acb4414c2ae0d5f6f02f5b8c03c69b32b}{create\_\-ordered\_\-array} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} max\_\-size, \hyperlink{ordered__array_8h_a23dcdab93c14dfac0f4d51af4109556b}{lessthan\_\-predicate\_\-t} less\_\-than)
+\item 
+\hyperlink{structordered__array__t}{ordered\_\-array\_\-t} \hyperlink{ordered__array_8c_a699f8fd099dd66db8706136f5436a4b0}{place\_\-ordered\_\-array} (void $\ast$\hyperlink{multiboot_8h_a48f994dfe1a5aea3bce6dc7d2be8efd5}{addr}, \hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} max\_\-size, \hyperlink{ordered__array_8h_a23dcdab93c14dfac0f4d51af4109556b}{lessthan\_\-predicate\_\-t} less\_\-than)
+\item 
+void \hyperlink{ordered__array_8c_a64706d7cc2205e752f397911027b882c}{destroy\_\-ordered\_\-array} (\hyperlink{structordered__array__t}{ordered\_\-array\_\-t} $\ast$array)
+\item 
+void \hyperlink{ordered__array_8c_a51d0520226774405d3156e493d8cc394}{insert\_\-ordered\_\-array} (\hyperlink{ordered__array_8h_acece46f31fb63617f4e9798b0dec1694}{type\_\-t} item, \hyperlink{structordered__array__t}{ordered\_\-array\_\-t} $\ast$array)
+\item 
+\hyperlink{ordered__array_8h_acece46f31fb63617f4e9798b0dec1694}{type\_\-t} \hyperlink{ordered__array_8c_aaeda111577ef7f22374e372113d9efd7}{lookup\_\-ordered\_\-array} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} i, \hyperlink{structordered__array__t}{ordered\_\-array\_\-t} $\ast$array)
+\item 
+void \hyperlink{ordered__array_8c_a315f58ff35d7ee215d9537198857e7f8}{remove\_\-ordered\_\-array} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} i, \hyperlink{structordered__array__t}{ordered\_\-array\_\-t} $\ast$array)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ordered__array_8c_acb4414c2ae0d5f6f02f5b8c03c69b32b}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!create\_\-ordered\_\-array@{create\_\-ordered\_\-array}}
+\index{create\_\-ordered\_\-array@{create\_\-ordered\_\-array}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{create\_\-ordered\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ordered\_\-array\_\-t} create\_\-ordered\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ max\_\-size, }
+\item[{{\bf lessthan\_\-predicate\_\-t}}]{ less\_\-than}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_acb4414c2ae0d5f6f02f5b8c03c69b32b}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{ordered__array_8c_acb4414c2ae0d5f6f02f5b8c03c69b32b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ordered__array_8c_a64706d7cc2205e752f397911027b882c}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!destroy\_\-ordered\_\-array@{destroy\_\-ordered\_\-array}}
+\index{destroy\_\-ordered\_\-array@{destroy\_\-ordered\_\-array}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{destroy\_\-ordered\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void destroy\_\-ordered\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf ordered\_\-array\_\-t} $\ast$}]{ array}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_a64706d7cc2205e752f397911027b882c}
+\hypertarget{ordered__array_8c_a51d0520226774405d3156e493d8cc394}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!insert\_\-ordered\_\-array@{insert\_\-ordered\_\-array}}
+\index{insert\_\-ordered\_\-array@{insert\_\-ordered\_\-array}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{insert\_\-ordered\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void insert\_\-ordered\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf type\_\-t}}]{ item, }
+\item[{{\bf ordered\_\-array\_\-t} $\ast$}]{ array}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_a51d0520226774405d3156e493d8cc394}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{ordered__array_8c_a51d0520226774405d3156e493d8cc394_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ordered__array_8c_aaeda111577ef7f22374e372113d9efd7}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!lookup\_\-ordered\_\-array@{lookup\_\-ordered\_\-array}}
+\index{lookup\_\-ordered\_\-array@{lookup\_\-ordered\_\-array}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{lookup\_\-ordered\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type\_\-t} lookup\_\-ordered\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ i, }
+\item[{{\bf ordered\_\-array\_\-t} $\ast$}]{ array}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_aaeda111577ef7f22374e372113d9efd7}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{ordered__array_8c_aaeda111577ef7f22374e372113d9efd7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ordered__array_8c_a699f8fd099dd66db8706136f5436a4b0}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!place\_\-ordered\_\-array@{place\_\-ordered\_\-array}}
+\index{place\_\-ordered\_\-array@{place\_\-ordered\_\-array}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{place\_\-ordered\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ordered\_\-array\_\-t} place\_\-ordered\_\-array (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ addr, }
+\item[{{\bf u32int}}]{ max\_\-size, }
+\item[{{\bf lessthan\_\-predicate\_\-t}}]{ less\_\-than}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_a699f8fd099dd66db8706136f5436a4b0}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{ordered__array_8c_a699f8fd099dd66db8706136f5436a4b0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{ordered__array_8c_a699f8fd099dd66db8706136f5436a4b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ordered__array_8c_a315f58ff35d7ee215d9537198857e7f8}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!remove\_\-ordered\_\-array@{remove\_\-ordered\_\-array}}
+\index{remove\_\-ordered\_\-array@{remove\_\-ordered\_\-array}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{remove\_\-ordered\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void remove\_\-ordered\_\-array (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ i, }
+\item[{{\bf ordered\_\-array\_\-t} $\ast$}]{ array}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_a315f58ff35d7ee215d9537198857e7f8}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{ordered__array_8c_a315f58ff35d7ee215d9537198857e7f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ordered__array_8c_a3462e94d4df3f7237f39641fb90a7fa4}{
+\index{ordered\_\-array.c@{ordered\_\-array.c}!standard\_\-lessthan\_\-predicate@{standard\_\-lessthan\_\-predicate}}
+\index{standard\_\-lessthan\_\-predicate@{standard\_\-lessthan\_\-predicate}!ordered_array.c@{ordered\_\-array.c}}
+\subsubsection[{standard\_\-lessthan\_\-predicate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s8int} standard\_\-lessthan\_\-predicate (
+\begin{DoxyParamCaption}
+\item[{{\bf type\_\-t}}]{ a, }
+\item[{{\bf type\_\-t}}]{ b}
+\end{DoxyParamCaption}
+)}}
+\label{ordered__array_8c_a3462e94d4df3f7237f39641fb90a7fa4}

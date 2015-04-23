@@ -1,0 +1,309 @@
+\hypertarget{paging_8c}{
+\section{paging.c File Reference}
+\label{paging_8c}\index{paging.c@{paging.c}}
+}
+{\ttfamily \#include \char`\"{}paging.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}kmem.h\char`\"{}}\par
+Include dependency graph for paging.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{paging_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{paging_8c_a94f8d624e19f4f1ecc503e2f82071c9e}{INDEX\_\-FROM\_\-BIT}(a)~(a/(8$\ast$4))
+\item 
+\#define \hyperlink{paging_8c_a9d53b10c4e0cac33faba5168b41d0daa}{OFFSET\_\-FROM\_\-BIT}(a)~(a\%(8$\ast$4))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{paging_8c_aeb12c060bb8a123dc6a89b3fdcecb4cf}{PANIC} (char $\ast$str)
+\item 
+void \hyperlink{paging_8c_abec6551c0c913d3f198e9482052ff591}{alloc\_\-frame} (\hyperlink{structpage}{page\_\-properties} $\ast$\hyperlink{structpage}{page}, int is\_\-kernel, int is\_\-writeable)
+\item 
+void \hyperlink{paging_8c_aa956ab333dbb12a2d27bd0f214c2444a}{free\_\-frame} (\hyperlink{structpage}{page\_\-properties} $\ast$\hyperlink{structpage}{page})
+\item 
+void \hyperlink{paging_8c_a9e357eddcd68888eeaef2b8f86d0cc10}{initialize\_\-paging} ()
+\item 
+void \hyperlink{paging_8c_a15e4d1dc324e65819e9375f65b45eb3a}{switch\_\-page\_\-directory} (\hyperlink{structpage__directory}{page\_\-directory\_\-table} $\ast$dir)
+\item 
+\hyperlink{structpage}{page\_\-properties} $\ast$ \hyperlink{paging_8c_ac65afaa24b68ab7b8a8438edd0d9f65f}{get\_\-page} (\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} address, int make, \hyperlink{structpage__directory}{page\_\-directory\_\-table} $\ast$dir)
+\item 
+void \hyperlink{paging_8c_a6293af8e675059a566216be86660854b}{page\_\-fault} (\hyperlink{structregisters}{registers\_\-t} regs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpage__directory}{page\_\-directory\_\-table} $\ast$ \hyperlink{paging_8c_a92a6318f506f0e8f68063b71bc445d5f}{kernel\_\-directory} = 0
+\item 
+\hyperlink{structpage__directory}{page\_\-directory\_\-table} $\ast$ \hyperlink{paging_8c_aa3f00bcbef5d9a8e159468ca2afe1713}{current\_\-directory} = 0
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} $\ast$ \hyperlink{paging_8c_a76492529572a1a20a06076ac40d66b29}{frames}
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{paging_8c_abf36580d5618820f15388083c9313e60}{nframes}
+\item 
+\hyperlink{library_8h_ad7ecf93b77285d9bf039d27fa3f1a588}{u32int} \hyperlink{paging_8c_a1190c85c81abdfbf1fba56ba7d3d78e6}{mem\_\-ptr}
+\item 
+\hyperlink{structheap__t}{heap\_\-t} $\ast$ \hyperlink{paging_8c_a517ce61e492dcf2ae8d2e232a2499a24}{kheap}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{paging_8c_a94f8d624e19f4f1ecc503e2f82071c9e}{
+\index{paging.c@{paging.c}!INDEX\_\-FROM\_\-BIT@{INDEX\_\-FROM\_\-BIT}}
+\index{INDEX\_\-FROM\_\-BIT@{INDEX\_\-FROM\_\-BIT}!paging.c@{paging.c}}
+\subsubsection[{INDEX\_\-FROM\_\-BIT}]{\setlength{\rightskip}{0pt plus 5cm}\#define INDEX\_\-FROM\_\-BIT(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~(a/(8$\ast$4))}}
+\label{paging_8c_a94f8d624e19f4f1ecc503e2f82071c9e}
+\hypertarget{paging_8c_a9d53b10c4e0cac33faba5168b41d0daa}{
+\index{paging.c@{paging.c}!OFFSET\_\-FROM\_\-BIT@{OFFSET\_\-FROM\_\-BIT}}
+\index{OFFSET\_\-FROM\_\-BIT@{OFFSET\_\-FROM\_\-BIT}!paging.c@{paging.c}}
+\subsubsection[{OFFSET\_\-FROM\_\-BIT}]{\setlength{\rightskip}{0pt plus 5cm}\#define OFFSET\_\-FROM\_\-BIT(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~(a\%(8$\ast$4))}}
+\label{paging_8c_a9d53b10c4e0cac33faba5168b41d0daa}
+
+
+\subsection{Function Documentation}
+\hypertarget{paging_8c_abec6551c0c913d3f198e9482052ff591}{
+\index{paging.c@{paging.c}!alloc\_\-frame@{alloc\_\-frame}}
+\index{alloc\_\-frame@{alloc\_\-frame}!paging.c@{paging.c}}
+\subsubsection[{alloc\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}void alloc\_\-frame (
+\begin{DoxyParamCaption}
+\item[{{\bf page\_\-properties} $\ast$}]{ page, }
+\item[{int}]{ is\_\-kernel, }
+\item[{int}]{ is\_\-writeable}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_abec6551c0c913d3f198e9482052ff591}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_abec6551c0c913d3f198e9482052ff591_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{paging_8c_abec6551c0c913d3f198e9482052ff591_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8c_aa956ab333dbb12a2d27bd0f214c2444a}{
+\index{paging.c@{paging.c}!free\_\-frame@{free\_\-frame}}
+\index{free\_\-frame@{free\_\-frame}!paging.c@{paging.c}}
+\subsubsection[{free\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}void free\_\-frame (
+\begin{DoxyParamCaption}
+\item[{{\bf page\_\-properties} $\ast$}]{ page}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_aa956ab333dbb12a2d27bd0f214c2444a}
+\hypertarget{paging_8c_ac65afaa24b68ab7b8a8438edd0d9f65f}{
+\index{paging.c@{paging.c}!get\_\-page@{get\_\-page}}
+\index{get\_\-page@{get\_\-page}!paging.c@{paging.c}}
+\subsubsection[{get\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page\_\-properties}$\ast$ get\_\-page (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{ address, }
+\item[{int}]{ make, }
+\item[{{\bf page\_\-directory\_\-table} $\ast$}]{ dir}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_ac65afaa24b68ab7b8a8438edd0d9f65f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_ac65afaa24b68ab7b8a8438edd0d9f65f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_ac65afaa24b68ab7b8a8438edd0d9f65f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8c_a9e357eddcd68888eeaef2b8f86d0cc10}{
+\index{paging.c@{paging.c}!initialize\_\-paging@{initialize\_\-paging}}
+\index{initialize\_\-paging@{initialize\_\-paging}!paging.c@{paging.c}}
+\subsubsection[{initialize\_\-paging}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\_\-paging (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_a9e357eddcd68888eeaef2b8f86d0cc10}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_a9e357eddcd68888eeaef2b8f86d0cc10_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{paging_8c_a9e357eddcd68888eeaef2b8f86d0cc10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8c_a6293af8e675059a566216be86660854b}{
+\index{paging.c@{paging.c}!page\_\-fault@{page\_\-fault}}
+\index{page\_\-fault@{page\_\-fault}!paging.c@{paging.c}}
+\subsubsection[{page\_\-fault}]{\setlength{\rightskip}{0pt plus 5cm}void page\_\-fault (
+\begin{DoxyParamCaption}
+\item[{{\bf registers\_\-t}}]{ regs}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_a6293af8e675059a566216be86660854b}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_a6293af8e675059a566216be86660854b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=354pt]{paging_8c_a6293af8e675059a566216be86660854b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8c_aeb12c060bb8a123dc6a89b3fdcecb4cf}{
+\index{paging.c@{paging.c}!PANIC@{PANIC}}
+\index{PANIC@{PANIC}!paging.c@{paging.c}}
+\subsubsection[{PANIC}]{\setlength{\rightskip}{0pt plus 5cm}void PANIC (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ str}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_aeb12c060bb8a123dc6a89b3fdcecb4cf}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=356pt]{paging_8c_aeb12c060bb8a123dc6a89b3fdcecb4cf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_aeb12c060bb8a123dc6a89b3fdcecb4cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{paging_8c_a15e4d1dc324e65819e9375f65b45eb3a}{
+\index{paging.c@{paging.c}!switch\_\-page\_\-directory@{switch\_\-page\_\-directory}}
+\index{switch\_\-page\_\-directory@{switch\_\-page\_\-directory}!paging.c@{paging.c}}
+\subsubsection[{switch\_\-page\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}void switch\_\-page\_\-directory (
+\begin{DoxyParamCaption}
+\item[{{\bf page\_\-directory\_\-table} $\ast$}]{ dir}
+\end{DoxyParamCaption}
+)}}
+\label{paging_8c_a15e4d1dc324e65819e9375f65b45eb3a}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{paging_8c_a15e4d1dc324e65819e9375f65b45eb3a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{paging_8c_aa3f00bcbef5d9a8e159468ca2afe1713}{
+\index{paging.c@{paging.c}!current\_\-directory@{current\_\-directory}}
+\index{current\_\-directory@{current\_\-directory}!paging.c@{paging.c}}
+\subsubsection[{current\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page\_\-directory\_\-table}$\ast$ {\bf current\_\-directory} = 0}}
+\label{paging_8c_aa3f00bcbef5d9a8e159468ca2afe1713}
+\hypertarget{paging_8c_a76492529572a1a20a06076ac40d66b29}{
+\index{paging.c@{paging.c}!frames@{frames}}
+\index{frames@{frames}!paging.c@{paging.c}}
+\subsubsection[{frames}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int}$\ast$ {\bf frames}}}
+\label{paging_8c_a76492529572a1a20a06076ac40d66b29}
+\hypertarget{paging_8c_a92a6318f506f0e8f68063b71bc445d5f}{
+\index{paging.c@{paging.c}!kernel\_\-directory@{kernel\_\-directory}}
+\index{kernel\_\-directory@{kernel\_\-directory}!paging.c@{paging.c}}
+\subsubsection[{kernel\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page\_\-directory\_\-table}$\ast$ {\bf kernel\_\-directory} = 0}}
+\label{paging_8c_a92a6318f506f0e8f68063b71bc445d5f}
+\hypertarget{paging_8c_a517ce61e492dcf2ae8d2e232a2499a24}{
+\index{paging.c@{paging.c}!kheap@{kheap}}
+\index{kheap@{kheap}!paging.c@{paging.c}}
+\subsubsection[{kheap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf heap\_\-t}$\ast$ {\bf kheap}}}
+\label{paging_8c_a517ce61e492dcf2ae8d2e232a2499a24}
+\hypertarget{paging_8c_a1190c85c81abdfbf1fba56ba7d3d78e6}{
+\index{paging.c@{paging.c}!mem\_\-ptr@{mem\_\-ptr}}
+\index{mem\_\-ptr@{mem\_\-ptr}!paging.c@{paging.c}}
+\subsubsection[{mem\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} {\bf mem\_\-ptr}}}
+\label{paging_8c_a1190c85c81abdfbf1fba56ba7d3d78e6}
+\hypertarget{paging_8c_abf36580d5618820f15388083c9313e60}{
+\index{paging.c@{paging.c}!nframes@{nframes}}
+\index{nframes@{nframes}!paging.c@{paging.c}}
+\subsubsection[{nframes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} {\bf nframes}}}
+\label{paging_8c_abf36580d5618820f15388083c9313e60}
